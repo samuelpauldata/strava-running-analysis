@@ -1,0 +1,36 @@
+name: Mise a jour Strava
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Python setup
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Installer les librairies
+        run: pip install requests pandas matplotlib
+
+      - name: Executer le script
+        env:
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+          REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
+        run: python update_strava.py
+
+      - name: Pousser les changements
+        run: |
+          git config user.name 'GitHub Actions'
+          git config user.email 'actions@github.com'
+          git add strava_courses.csv strava_overview.png
+          git diff --staged --quiet || git commit -m 'Mise a jour automatique Strava'
+          git push

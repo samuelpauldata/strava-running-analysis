@@ -113,4 +113,48 @@ print(f'{len(activites)} activites telechargees')
 df = nettoyer_donnees(activites)
 df.to_csv('strava_courses.csv', index=False)
 generer_graphiques(df)
+telecharger_gps(access_token)
 print('Mise a jour complete!')
+
+def telecharger_gps(access_token):
+    headers = {"Authorization": f"Bearer {access_token}"}
+    tous_ids = []
+    page = 1
+    while True:
+        response = requests.get(
+            "https://www.strava.com/api/v3/athlete/activities",
+            headers=headers,
+            params={"per_page": 100, "page": page}
+        )
+        data = response.json()
+        if not data:
+            break
+        for a in data:
+            if a["type"] == "Run":
+                tous_ids.append({"id": a["id"], "name": a["name"], "start_date_local": a["start_date_local"]})
+        page += 1
+
+    traces_gps = []
+    import time
+    for course in tous_ids:
+        response = requests.get(
+            f"https://www.strava.com/api/v3/activities/{course['id']}/streams",
+            headers=headers,
+            params={"keys": "latlng", "key_by_type": "true"}
+        )
+        data = response.json()
+        if "latlng" in data:
+            for coord in data["latlng"]["data"]:
+                traces_gps.append({
+                    "id": course["id"],
+                    "nom": course["name"],
+                    "date": course["start_date_local"],
+                    "lat": coord[0],
+                    "lng": coord[1]
+                })
+        time.sleep(0.3)
+
+    df_gps = pd.DataFrame(traces_gps)
+    df_gps = df_gps.groupby("id").apply(lambda x: x.iloc[::10]).reset_index(drop=True)
+    df_gps.to_csv("strava_gps.csv", index=False)
+    print(f"GPS mis a jour : {len(df_gps)} points")

@@ -2,11 +2,12 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import folium
+from streamlit_folium import st_folium
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
-st.set_page_config(page_title='Mes courses Strava', page_icon='running', layout='wide')
-
+st.set_page_config(page_title='Mes courses Strava', layout='wide')
 st.title('Analyse de mes courses Strava')
 st.markdown('Analyse de 700+ courses personnelles extraites via API Strava')
 
@@ -21,7 +22,7 @@ def charger_donnees():
 
 df = charger_donnees()
 
-# ---- METRIQUES EN HAUT ----
+# ---- METRIQUES ----
 st.header('Statistiques generales')
 col1, col2, col3, col4 = st.columns(4)
 col1.metric('Total courses', f"{len(df)}")
@@ -29,7 +30,7 @@ col2.metric('Distance totale', f"{df['distance_km'].sum():.0f} km")
 col3.metric('Distance moyenne', f"{df['distance_km'].mean():.1f} km")
 col4.metric('Allure moyenne', f"{int(df['allure_min_km'].mean())}:{int((df['allure_min_km'].mean()%1)*60):02d} min/km")
 
-# ---- GRAPHIQUE EVOLUTION ----
+# ---- EVOLUTION ----
 st.header('Evolution dans le temps')
 fig, ax = plt.subplots(figsize=(12, 4))
 ax.plot(df['start_date_local'], df['distance_km'], alpha=0.5, color='orangered')
@@ -55,14 +56,36 @@ with col1:
 with col2:
     fig, ax = plt.subplots(figsize=(6, 4))
     ax.bar(stats_annee['annee'], stats_annee['allure_moyenne'], color='steelblue', alpha=0.8)
-    ax.set_title('Allure moyenne par annee (min/km)')
+    ax.set_title('Allure moyenne par annee')
     ax.invert_yaxis()
     st.pyplot(fig)
     plt.close()
 
+# ---- CARTE GPS ----
+st.header('Carte de mes courses')
+st.markdown('50 dernieres courses tracees sur la carte')
+
+@st.cache_data
+def charger_gps():
+    return pd.read_csv('strava_gps.csv')
+
+df_gps = charger_gps()
+df_gps_bounds = df_gps[df_gps['lat'].notna()]
+lat_min, lat_max = df_gps_bounds['lat'].min(), df_gps_bounds['lat'].max()
+lng_min, lng_max = df_gps_bounds['lng'].min(), df_gps_bounds['lng'].max()
+carte = folium.Map(location=[df_gps_bounds['lat'].mean(), df_gps_bounds['lng'].mean()], zoom_start=9, tiles='CartoDB dark_matter')
+carte.fit_bounds([[lat_min, lng_min], [lat_max, lng_max]])
+for activity_id in df_gps['id'].unique():
+    points = df_gps[df_gps['id'] == activity_id][['lat', 'lng']].values.tolist()
+    if len(points) > 10:
+        nom = df_gps[df_gps['id'] == activity_id]['nom'].iloc[0]
+        date = str(df_gps[df_gps['id'] == activity_id]['date'].iloc[0])[:10]
+        folium.PolyLine(points, color='#FC4C02', weight=2, opacity=0.7,
+                       tooltip=f'{nom} - {date}').add_to(carte)
+st_folium(carte, width=1200, height=500)
+
 # ---- SIMULATEUR ML ----
-st.header('Simulateur d allure — Modele ML')
-st.markdown('Predisez votre allure selon vos parametres de course')
+st.header('Simulateur d allure - Modele ML')
 
 @st.cache_resource
 def entrainer_modele():
@@ -75,11 +98,10 @@ def entrainer_modele():
     return modele
 
 modele = entrainer_modele()
-
 col1, col2 = st.columns(2)
 with col1:
     distance = st.slider('Distance (km)', 1.0, 42.2, 10.0, 0.5)
-    fc = st.slider('Frequence cardiaque cible (bpm)', 120, 185, 155)
+    fc = st.slider('Frequence cardiaque (bpm)', 120, 185, 155)
 with col2:
     denivele = st.slider('Denivele (m)', 0, 500, 50)
     annee = st.selectbox('Annee', [2023, 2024, 2025, 2026])
@@ -92,11 +114,9 @@ secondes = int((allure - minutes) * 60)
 temps_total = allure * distance
 heures = int(temps_total // 60)
 mins = int(temps_total % 60)
-
 st.success(f'Allure predite : {minutes}:{secondes:02d} min/km')
 if heures > 0:
     st.info(f'Temps total estime : {heures}h{mins:02d}min')
 else:
     st.info(f'Temps total estime : {mins}min')
-
 st.caption('Modele Random Forest - R2: 0.683 - MAE: 0.237 min/km')

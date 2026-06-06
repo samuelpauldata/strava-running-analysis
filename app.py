@@ -101,7 +101,7 @@ st.markdown('596 courses tracees sur la carte (112 tapis roulant sans GPS)')
 def charger_gps():
     return pd.read_csv('strava_gps.csv')
 df_gps = charger_gps()
-carte = folium.Map(location=[45.5322, -73.8953], zoom_start=10, tiles='OpenStreetMap')
+carte = folium.Map(location=[45.5322, -73.8953], zoom_start=10, tiles='CartoDB dark_matter')
 df_gps_bounds = df_gps[df_gps['lat'].notna()]
 lat_min, lat_max = df_gps_bounds['lat'].min(), df_gps_bounds['lat'].max()
 lng_min, lng_max = df_gps_bounds['lng'].min(), df_gps_bounds['lng'].max()

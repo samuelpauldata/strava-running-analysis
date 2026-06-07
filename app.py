@@ -148,3 +148,64 @@ if heures > 0:
 else:
     st.info(f'Temps total estime : {mins}min')
 st.caption('Modele Random Forest - R2: 0.683 - MAE: 0.237 min/km')
+
+# ---- SECTION INSIGHTS ----
+st.header('Insights — Ce que mes donnees m ont appris')
+st.markdown('---')
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.subheader('1. Une progression remarquable')
+    st.markdown('''
+    De **412 km en 2023** a **4787 km en 2025**, mon volume d entrainement
+    a augmente de **1062%** en 2 ans. Plus frappant encore : ma distance
+    moyenne par course est passee de 7.2 km a 15.6 km, tout en maintenant
+    une allure stable. Les donnees confirment ce que les entraineurs disent :
+    la progression en course a pied est avant tout une question de volume progressif.
+    ''')
+    st.metric('Volume 2023', '412 km')
+    st.metric('Volume 2025', '4787 km', delta='+4375 km')
+
+with col2:
+    st.subheader('2. Le syndrome de l essuie-glace detecte')
+    st.markdown('''
+    En analysant le volume hebdomadaire, un creux spectaculaire apparait
+    en octobre-novembre 2024. Les donnees racontent l histoire avant meme
+    que je la formule : montee en charge intensive pour le premier marathon,
+    pic en septembre, puis chute brutale apres octobre. Le syndrome de
+    l essuie-glace (bandelette ilio-tibiale) force un repos de 6 semaines.
+    Un exemple concret de ce que les donnees peuvent reveler sur la sante
+    d un athlete.
+    ''')
+    st.metric('Semaines de repos', '6 semaines')
+    st.metric('Chute du volume', '-78% en novembre 2024')
+
+st.markdown('---')
+col3, col4 = st.columns(2)
+
+with col3:
+    st.subheader('3. La frequence cardiaque explique tout')
+    st.markdown('''
+    Le modele Random Forest revele que la **frequence cardiaque explique
+    70% de l allure** — bien devant la distance (12%), l annee (10%) et
+    le denivele (8%). Cette decouverte confirme scientifiquement ce que
+    les physiologistes du sport enseignent : courir par zones cardiaques
+    est la methode la plus precise pour controler son effort. Mon modele
+    l a appris de lui-meme, uniquement a partir de mes donnees.
+    ''')
+    st.metric('Importance FC', '70%')
+    st.metric('R2 du modele', '0.683')
+
+with col4:
+    st.subheader('4. L humain derriere la machine')
+    st.markdown('''
+    Le modele predit mon demi-marathon a 1h35 — mon vrai temps est 1h21.
+    Ecart de 14 minutes. Cette limite illustre le **biais de distribution**
+    en machine learning : le modele entraine sur des sorties d entrainement
+    ne peut pas capturer l adrenaline de la competition, la preparation
+    specifique, ni la motivation du jour de course. Les donnees ne racontent
+    jamais toute l histoire — c est l analyste qui comprend le contexte.
+    ''')
+    st.metric('Temps predit', '1h35min')
+    st.metric('Temps reel', '1h21min', delta='-14min')

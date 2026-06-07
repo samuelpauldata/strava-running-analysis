@@ -119,8 +119,12 @@ st_folium(carte, width=1200, height=500)
 st.header('Simulateur d allure - Modele ML')
 @st.cache_resource
 def entrainer_modele():
-    df_ml = df[['distance_km','average_heartrate','total_elevation_gain','annee','allure_min_km']].dropna()
-    X = df_ml[['distance_km','average_heartrate','total_elevation_gain','annee']]
+    df['mois'] = df['start_date_local'].dt.month
+    df['jour_semaine'] = df['start_date_local'].dt.dayofweek
+    df_ml = df[['distance_km','average_heartrate','total_elevation_gain',
+                'annee','mois','jour_semaine','allure_min_km']].dropna()
+    X = df_ml[['distance_km','average_heartrate','total_elevation_gain',
+               'annee','mois','jour_semaine']]
     y = df_ml['allure_min_km']
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     modele = RandomForestRegressor(n_estimators=100, random_state=42)
@@ -134,8 +138,15 @@ with col1:
 with col2:
     denivele = st.slider('Denivele (m)', 0, 500, 50)
     annee = st.selectbox('Annee', [2023, 2024, 2025, 2026])
+    mois = st.selectbox('Mois', list(range(1,13)), index=5,
+                        format_func=lambda x: ['Jan','Fev','Mar','Avr','Mai','Jun',
+                                               'Jul','Aou','Sep','Oct','Nov','Dec'][x-1])
+    jour_semaine = st.selectbox('Jour', list(range(7)),
+                                format_func=lambda x: ['Lundi','Mardi','Mercredi',
+                                                       'Jeudi','Vendredi','Samedi','Dimanche'][x])
 X_pred = pd.DataFrame([{'distance_km': distance, 'average_heartrate': fc,
-                         'total_elevation_gain': denivele, 'annee': annee}])
+                         'total_elevation_gain': denivele, 'annee': annee,
+                         'mois': mois, 'jour_semaine': jour_semaine}])
 allure = modele.predict(X_pred)[0]
 minutes = int(allure)
 secondes = int((allure - minutes) * 60)
@@ -147,7 +158,7 @@ if heures > 0:
     st.info(f'Temps total estime : {heures}h{mins:02d}min')
 else:
     st.info(f'Temps total estime : {mins}min')
-st.caption('Modele Random Forest - R2: 0.683 - MAE: 0.237 min/km')
+st.caption('Modele Random Forest - R2: 0.813 - MAE: 0.150 min/km - 6 variables')
 
 # ---- SECTION INSIGHTS ----
 st.header('Insights — Ce que mes donnees m ont appris')

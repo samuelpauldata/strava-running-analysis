@@ -94,6 +94,99 @@ with col2:
     fig_ann2.update_layout(yaxis_autorange='reversed')
     st.plotly_chart(fig_ann2, use_container_width=True)
 
+# ---- PREVU VS REALISE ----
+st.header('Plan d entrainement vs Realise')
+st.markdown('Comparaison entre le volume prevu par le coach et le volume reel')
+
+@st.cache_data
+def charger_plan():
+    return pd.read_csv('entrainement_parsed.csv')
+
+df_plan = charger_plan()
+
+# Volume prevu par semaine
+volume_prevu = df_plan[df_plan['type'] != 'off'].groupby('semaine_code').agg(
+    volume_prevu_km=('distance_km', 'sum')
+).reset_index()
+
+# Extraire dates depuis semaine_label
+mois_dict = {
+    'janvier': 1, 'fevrier': 2, 'mars': 3, 'avril': 4,
+    'mai': 5, 'juin': 6, 'juillet': 7, 'aout': 8,
+    'septembre': 9, 'sept': 9, 'octobre': 10, 'novembre': 11,
+    'decembre': 12
+}
+
+def extraire_date_plan(code):
+    import re
+    bloc = int(code.split('.')[0])
+    annee = 2025 if bloc <= 12 else 2026
+    semaines_uniq = df_plan[df_plan['semaine_code'] == code]['semaine_label'].iloc[0]
+    label = semaines_uniq.lower().replace('1er', '1')
+    match = re.search(r'du\s+(\d+)\s+au\s+(\d+)\s+(\w+)', label)
+    if match:
+        jour_debut = int(match.group(1))
+        jour_fin = int(match.group(2))
+        mois_nom = match.group(3).strip()
+        for k in mois_dict:
+            if mois_nom.startswith(k):
+                mois_fin = mois_dict[k]
+                mois_debut = mois_fin - 1 if jour_debut > jour_fin and mois_fin > 1 else mois_fin
+                try:
+                    return pd.Timestamp(year=annee, month=mois_debut, day=jour_debut)
+                except:
+                    return None
+    return None
+
+volume_prevu['date_debut'] = volume_prevu['semaine_code'].apply(extraire_date_plan)
+volume_prevu['date_debut'] = pd.to_datetime(volume_prevu['date_debut']).dt.normalize()
+
+# Volume reel Strava
+df['semaine_debut'] = df['start_date_local'].dt.to_period('W-SUN').dt.start_time.dt.tz_localize(None)
+volume_reel_app = df.groupby('semaine_debut')['distance_km'].sum().reset_index()
+volume_reel_app.columns = ['date_debut', 'volume_reel_km']
+volume_reel_app['date_debut'] = pd.to_datetime(volume_reel_app['date_debut']).dt.normalize()
+
+# Fusionner
+df_comp = volume_prevu.merge(volume_reel_app, on='date_debut', how='inner')
+df_comp = df_comp.dropna(subset=['volume_prevu_km', 'volume_reel_km'])
+df_comp = df_comp.sort_values('date_debut')
+
+# Metriques
+col1, col2, col3 = st.columns(3)
+col1.metric('Semaines comparees', f"{len(df_comp)}")
+col2.metric('Volume prevu moyen', f"{df_comp['volume_prevu_km'].mean():.1f} km")
+col3.metric('Taux de realisation', f"{(df_comp['volume_reel_km'] / df_comp['volume_prevu_km']).mean()*100:.1f}%")
+
+# Graphique Plotly interactif
+import plotly.graph_objects as go
+fig_pv = go.Figure()
+fig_pv.add_trace(go.Scatter(
+    x=df_comp['date_debut'], y=df_comp['volume_prevu_km'],
+    mode='lines', name='Volume prevu',
+    line=dict(color='steelblue', width=2, dash='dash')
+))
+fig_pv.add_trace(go.Scatter(
+    x=df_comp['date_debut'], y=df_comp['volume_reel_km'],
+    mode='lines', name='Volume realise',
+    line=dict(color='orangered', width=2)
+))
+fig_pv.add_trace(go.Scatter(
+    x=pd.concat([df_comp['date_debut'], df_comp['date_debut'][::-1]]),
+    y=pd.concat([df_comp['volume_prevu_km'], df_comp['volume_reel_km'][::-1]]),
+    fill='toself', fillcolor='rgba(0,200,0,0.1)',
+    line=dict(color='rgba(255,255,255,0)'),
+    name='Ecart'
+))
+fig_pv.update_layout(
+    title='Volume hebdomadaire — Prevu vs Realise',
+    yaxis_title='Distance (km)',
+    height=450,
+    plot_bgcolor='white',
+    hovermode='x unified'
+)
+st.plotly_chart(fig_pv, use_container_width=True)
+st.caption('Les zones vertes indiquent les semaines ou vous avez depasse le plan.')
 # ---- CARTE GPS ----
 st.header('Carte de mes courses')
 st.markdown('596 courses tracees sur la carte (112 tapis roulant sans GPS)')
@@ -220,3 +313,4 @@ with col4:
     ''')
     st.metric('Temps predit', '1h35min')
     st.metric('Temps reel', '1h21min', delta='-14min')
+

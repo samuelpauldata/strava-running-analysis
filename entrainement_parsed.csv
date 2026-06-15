@@ -1,0 +1,558 @@
+semaine_code,semaine_label,jour,moment,type,distance_km,allure,repetitions,distance_rep,pause,surface,notes
+1.1,Semaine du 20 au 26 Janvier  - ENDURANCE: 39 km,Lundi,journée,off,,,,,,,off
+1.1,Semaine du 20 au 26 Janvier  - ENDURANCE: 39 km,Mardi,journée,intervalles,,5:10,6,4min,2,tapis,Mardi tapis roulant | 10 min à 5m10 | pause 2 min / | 6 x 4 min à 4m20 pause 2 min entre tes 4 min / | 10 min à 5m10
+1.1,Semaine du 20 au 26 Janvier  - ENDURANCE: 39 km,Mercredi,journée,course,14.0,5:20,,,,ext,Mercredi 14 km ext à 5m20
+1.1,Semaine du 20 au 26 Janvier  - ENDURANCE: 39 km,Jeudi,journée,course,10.0,5:10,,,,ext,Jeudi 10 km ext à 5m10
+1.1,Semaine du 20 au 26 Janvier  - ENDURANCE: 39 km,Vendredi,journée,intervalles,,5:10,9,2min,2,tapis,Vendredi tapis roulant | 10 min à 5m10 | pause 2 min / | 9 x 2 min à 4m10 pause 1 min entre tes 2 min / | 10 min à 5m10
+1.1,Semaine du 20 au 26 Janvier  - ENDURANCE: 39 km,Samedi,journée,off,,,,,,,off
+1.1,Semaine du 20 au 26 Janvier  - ENDURANCE: 39 km,Dimanche,journée,course,15.0,5:25,,,,ext,Dimanche 15 km ext à 5m25
+1.2,Semaine du 27 au 2 Février  - ENDURANCE: 45 km,Lundi,journée,off,,,,,,,off
+1.2,Semaine du 27 au 2 Février  - ENDURANCE: 45 km,Mardi,journée,intervalles,,5:10,5,5min,2,tapis,Mardi tapis roulant | 10 min à 5m10 pause 2 min / | 5 x 5 min à 4m25 pause 2m30  entre tes 5 min / | 10 min à 5m10
+1.2,Semaine du 27 au 2 Février  - ENDURANCE: 45 km,Mercredi,journée,course,15.0,5:25,,,,ext,Mercredi 15 km ext à 5m25
+1.2,Semaine du 27 au 2 Février  - ENDURANCE: 45 km,Jeudi,journée,course,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15
+1.2,Semaine du 27 au 2 Février  - ENDURANCE: 45 km,Vendredi,journée,intervalles,,5:10,15,1min,2,tapis,Vendredi tapis roulant | 10 min à 5m10 pause 2 min / | 15 x 1 min à 4m05 pause 1 min entre tes 1 min / | 10 min à 5m10
+1.2,Semaine du 27 au 2 Février  - ENDURANCE: 45 km,Samedi,journée,off,,,,,,,off
+1.2,Semaine du 27 au 2 Février  - ENDURANCE: 45 km,Dimanche,journée,course,18.0,5:30,,,,ext,Dimanche 18 km ext à 5m30
+1.3,Semaine du 3 au 9 Février  - ENDURANCE: 48 km,Lundi,journée,off,,,,,,,off
+1.3,Semaine du 3 au 9 Février  - ENDURANCE: 48 km,Mardi,journée,tempo,,5:10,,,,tapis,Mardi tapis roulant 60 min tempo | en alternance toute d'une shot | 10 min à 5m10 | 10 min à 4m30 | 10 min à 5m10 | 10 min à 4m30 | 10 min à 5m10 | 10 min à 4m30
+1.3,Semaine du 3 au 9 Février  - ENDURANCE: 48 km,Mercredi,journée,course,16.0,5:30,,,,ext,Mercredi 16 km ext à 5m30
+1.3,Semaine du 3 au 9 Février  - ENDURANCE: 48 km,Jeudi,journée,course,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15
+1.3,Semaine du 3 au 9 Février  - ENDURANCE: 48 km,Vendredi,journée,intervalles,,5:10,9,2min,2,tapis,Vendredi tapis roulant | 10 min à 5m10 pause 2 min / | 9 x 2 min à 4m10 pause 1 min entre tes 2 min / | 10 min à 5m10
+1.3,Semaine du 3 au 9 Février  - ENDURANCE: 48 km,Samedi,journée,off,,,,,,,off
+1.3,Semaine du 3 au 9 Février  - ENDURANCE: 48 km,Dimanche,journée,course,20.0,5:35,,,,ext,Dimanche 20 km ext à 5m35 tes 4 dernier + rapide
+1.4,Semaine du 10 au 16 Février  - ENDURANCE: 52 km,Lundi,journée,off,,,,,,,off
+1.4,Semaine du 10 au 16 Février  - ENDURANCE: 52 km,Mardi,journée,tapis_complexe,5.0,5:10,,,2,tapis,Mardi tapis roulant | 10 min à 5m10 pause 2 min / | test 5 km comme une compétition joue souvent avec la vitesse pour faire un meilleur chrono / | 10 min à 4m40
+1.4,Semaine du 10 au 16 Février  - ENDURANCE: 52 km,Mercredi,journée,course,18.0,5:30,,,,ext,Mercredi 18 km ext à 5m30
+1.4,Semaine du 10 au 16 Février  - ENDURANCE: 52 km,Jeudi,journée,course,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15
+1.4,Semaine du 10 au 16 Février  - ENDURANCE: 52 km,Vendredi,journée,intervalles,,5:10,18,1min,2,tapis,Vendredi tapis roulant | 10 min à 5m10 pause 2 min / | 18 x 1 min à 4m00 pause 1 min entre tes 1 min / | 10 min à 5m10
+1.4,Semaine du 10 au 16 Février  - ENDURANCE: 52 km,Samedi,journée,off,,,,,,,off
+1.4,Semaine du 10 au 16 Février  - ENDURANCE: 52 km,Dimanche,journée,course,22.0,5:35,,,,ext,22 km ext à 5m35 tes 5 dernier + rapide
+10.1,Semaine du 29 au 5 Octobre,Lundi,journée,off,,,,,,,off
+10.1,Semaine du 29 au 5 Octobre,Mardi,matin,intervalles,2.0,4:40,2,1500m,2,ext,2 km ext à 4m40 pause 2 min / | 2 x 1500m à 3m55 en contrôle pas + vite  pause 2m30 entre tes 1500m / | 8 x 500m à 3m35 pause 1m30 entre tes 500m / | 2 km à 4m40
+10.1,Semaine du 29 au 5 Octobre,Mardi,soir,course,8.0,5:15,,,,ext,Mardi soir 8 km ext à 5m15
+10.1,Semaine du 29 au 5 Octobre,Mercredi,journée,course,18.0,5:30,,,,ext,Mercredi 18 km ext à 5m30
+10.1,Semaine du 29 au 5 Octobre,Jeudi,journée,course,14.0,5:25,,,,ext,Jeudi 14 km ext à 5m25
+10.1,Semaine du 29 au 5 Octobre,Vendredi,journée,intervalles,2.0,4:40,12,400m,2,ext,2 km ext à 4m40 pause 2 min / | 12 x 400m à 3m30 pause 1m25 entre tes 400m pas + vite  / | 2 km à 4m40
+10.1,Semaine du 29 au 5 Octobre,Vendredi,soir,course,8.0,5:15,,,,ext,Vendredi soir 8 km à 5m15
+10.1,Semaine du 29 au 5 Octobre,Samedi,journée,off,,,,,,,off
+10.1,Semaine du 29 au 5 Octobre,Dimanche,journée,course,24.0,4:45,,,,ext,Dimanche 24 km ext à 4m45 tes 4 dernier + rapide
+10.2,Semaine du 6 au 12 octobre,Lundi,journée,off,,,,,,,off
+10.2,Semaine du 6 au 12 octobre,Mardi,matin,intervalles,2.0,4:40,2,1500m,2,ext,2 km ext à 4m40 pause 2 min / | 2 x 1500m à 3m50 pas + vite  pause 2m30 entre tes 1500m / | 4 x 500m à 3m30 pause 1m30 entre tes 500m pas + vite  / | 2 km à 4m40
+10.2,Semaine du 6 au 12 octobre,Mercredi,journée,course,16.0,5:25,,,,ext,Mercredi 16 km ext à 5m25
+10.2,Semaine du 6 au 12 octobre,Jeudi,journée,course,12.0,5:10,,,,ext,Jeudi 12 km ext à 5m10
+10.2,Semaine du 6 au 12 octobre,Vendredi,journée,intervalles,2.0,4:40,12,300m,2,ext,2 km ext à 4m40 pause 2 min / | 12 x 300m à 3m25 pause 1m10 entre tes 300m pas + vite  / | 2 km à 4m40
+10.2,Semaine du 6 au 12 octobre,Samedi,journée,off,,,,,,,off
+10.2,Semaine du 6 au 12 octobre,Dimanche,journée,tempo,15.0,4:45,,,,ext,Dimanche 15 km ext tempo | 5 km à 4m45 | 5 km à 4m10 | 5 km à 4m45
+10.3,Semaine du 13 au 19 Octobre,Lundi,journée,course,14.0,5:20,,,,ext,Lundi 14 km ext à 5m20
+10.3,Semaine du 13 au 19 Octobre,Mardi,journée,course,12.0,5:15,,,,ext,Mardi 12 km ext à 5m15
+10.3,Semaine du 13 au 19 Octobre,Mercredi,journée,intervalles,2.0,4:40,12,300m,2,ext,2 km ext à 4m40 pause 2 min / | 12 x 300m à 3m25 pas + vite pause 1m10 entre tes 300m  / | 2 km à 4m40
+10.3,Semaine du 13 au 19 Octobre,Jeudi,journée,off,,,,,,,off
+10.3,Semaine du 13 au 19 Octobre,Vendredi,journée,off,,,,,,,off
+10.3,Semaine du 13 au 19 Octobre,Samedi,journée,off,,,,,,,off
+10.3,Semaine du 13 au 19 Octobre,Dimanche,journée,course_officielle,,,,,,,Dimanche Marathon de Toronto
+10.4,Semaine du 20 au 26 Octobre,Lundi,journée,off,,,,,,,off
+10.4,Semaine du 20 au 26 Octobre,Mardi,journée,off,,,,,,,off
+10.4,Semaine du 20 au 26 Octobre,Mercredi,journée,off,,,,,,,off
+10.4,Semaine du 20 au 26 Octobre,Jeudi,journée,intervalles,2.0,4:40,10,300m,2,ext,2 km ext à 4m40 pause 2 min / | 10 x 300m à 3m25 pause 1m10 entre tes 300m / | 2 km à 4m40
+10.4,Semaine du 20 au 26 Octobre,Vendredi,journée,course,12.0,5:10,,,,ext,Vendredi 12 km ext à 5m10
+10.4,Semaine du 20 au 26 Octobre,Samedi,journée,off,,,,,,,off
+10.4,Semaine du 20 au 26 Octobre,Dimanche,journée,course,18.0,5:10,,,,ext,Dimanche 18 km ext à 5m10 tes 3 dernier km + rapide
+11.1,Semaine du 27 au 2 Novembre,Lundi,journée,off,,,,,,,off
+11.1,Semaine du 27 au 2 Novembre,Mardi,journée,intervalles,,4:40,4,7min,2,tapis,Mardi tapis roulant | 10 min à 4m40 pause 2 min / | 4 x 7 min à 3m50 pause 3m30  entre tes 7 min / | 10 min à 4m40
+11.1,Semaine du 27 au 2 Novembre,Mercredi,journée,course,18.0,5:25,,,,ext,Mercredi 18 km ext à 5m25
+11.1,Semaine du 27 au 2 Novembre,Jeudi,journée,course,12.0,5:10,,,,ext,Jeudi 12 km ext à 5m10 + RENFO
+11.1,Semaine du 27 au 2 Novembre,Vendredi,journée,intervalles,,4:40,7,3min,2,tapis,Vendredi tapis roulant | 10 min à 4m40 pause 2 min / | 7 x 3 min à 3m25  pause 1m30 entre tes 3 min / | 10 min à 4m40
+11.1,Semaine du 27 au 2 Novembre,Samedi,journée,course,10.0,5:00,,,,ext,Samedi 10 km ext à 5m00 + RENFO
+11.1,Semaine du 27 au 2 Novembre,Dimanche,journée,course,25.0,5:10,,,,ext,Dimanche 25 km ext à 5m10 tes 5 dernier + rapide
+11.2,Semaine du 3 au 9 Novembre,Lundi,journée,off,,,,,,,off
+11.2,Semaine du 3 au 9 Novembre,Mardi,journée,intervalles,,4:40,7,4min,2,tapis,Mardi tapis roulant | 10 min à 4m40 pause 2 min / | 7 x 4 min à 3m40 pause 2 min  entre tes 4 min / | 10 min à 4m40
+11.2,Semaine du 3 au 9 Novembre,Mercredi,journée,course,20.0,5:30,,,,ext,Mercredi 20 km ext à 5m30
+11.2,Semaine du 3 au 9 Novembre,Jeudi,journée,course,12.0,5:10,,,,ext,Jeudi 12 km ext à 5m10 + RENFO
+11.2,Semaine du 3 au 9 Novembre,Vendredi,journée,intervalles,,4:40,7,3min,2,tapis,Vendredi tapis roulant | 10 min à 4m40 pause 2 min / | 7 x 3 min à 3m30  pause 1m30 entre tes 3 min / | 10 min à 4m40
+11.2,Semaine du 3 au 9 Novembre,Samedi,journée,course,12.0,5:10,,,,ext,Samedi 12 km ext à 5m10 ou off tu te juge si tes fatigué + RENFO
+11.2,Semaine du 3 au 9 Novembre,Dimanche,journée,course,28.0,5:15,,,,ext,Dimanche 28 km ext à 5m15 tes 4 dernier + rapide
+11.3,Semaine du 10 au 16 Novembre,Lundi,journée,off,,,,,,,off
+11.3,Semaine du 10 au 16 Novembre,Mardi,journée,course,14.0,5:15,,,,ext,Mardi 14 km ext à 5m15
+11.3,Semaine du 10 au 16 Novembre,Mercredi,journée,course,16.0,5:20,,,,ext,Mercredi 16 km ext à 5m20
+11.3,Semaine du 10 au 16 Novembre,Jeudi,journée,off,,,,,,,off
+11.3,Semaine du 10 au 16 Novembre,Vendredi,journée,course,18.0,5:25,,,,ext,Vendredi 18 km ext à 5m25
+11.3,Semaine du 10 au 16 Novembre,Samedi,journée,course,12.0,5:10,,,,ext,Samedi 12 km ext à 5m10
+11.3,Semaine du 10 au 16 Novembre,Dimanche,journée,course,20.0,5:10,,,,ext,Dimanche 20 km ext à 5m10 tes 5 dernier plus rapide
+11.4,Semaine du 17 au 23 Novembre,Lundi,journée,off,,,,,,,off
+11.4,Semaine du 17 au 23 Novembre,Mardi,journée,intervalles,,4:40,6,5min,2,tapis,Mardi tapis roulant | 10 min à 4m40 pause 2 min / | 6 x 5 min à 3m45 pause 2m30  entre tes 5 min / | 10 min à 4m40
+11.4,Semaine du 17 au 23 Novembre,Mercredi,journée,course,18.0,5:25,,,,ext,Mercredi 18 km ext à 5m25
+11.4,Semaine du 17 au 23 Novembre,Jeudi,journée,course,12.0,5:10,,,,ext,Jeudi 12 km ext à 5m10
+11.4,Semaine du 17 au 23 Novembre,Vendredi,journée,intervalles,,4:40,11,2min,2,tapis,Vendredi tapis roulant | 10 min à 4m40 pause 2 min / | 11 x 2 min à 3m25  pause 1 min  entre tes 2 min / | 10 min à 4m40
+11.4,Semaine du 17 au 23 Novembre,Samedi,journée,course,10.0,5:10,,,,ext,Samedi 10 km ext à 5m10
+11.4,Semaine du 17 au 23 Novembre,Dimanche,journée,course,25.0,5:10,,,,ext,Dimanche 25 km ext à 5m10 tes 5 dernier + rapide
+12.1,Semaine du 24 au 30 Novembre,Lundi,journée,course,12.0,5:15,,,,ext,Lundi 12 km ext à  5m15
+12.1,Semaine du 24 au 30 Novembre,Mardi,journée,intervalles,,4:40,8,3min,2,tapis,Mardi tapis roulant | 10 min à 4m40 pause 2 min / | 8 x 3 min à 3m35 pause 1m30 entre tes 3 min  / | 10 min à 4m40
+12.1,Semaine du 24 au 30 Novembre,Mercredi,journée,course,16.0,5:20,,,,ext,Mercredi 16 km ext à 5m20
+12.1,Semaine du 24 au 30 Novembre,Jeudi,journée,course,12.0,5:10,,,,ext,Jeudi 12 km ext à 5m10
+12.1,Semaine du 24 au 30 Novembre,Vendredi,journée,intervalles,,4:40,20,1min,2,tapis,Vendredi tapis roulant | 10 min à 4m40 pause 2 min / | 20 x 1 min à 3m20 pause 1 min  entre tes 1min / | 10 min à 4m40
+12.1,Semaine du 24 au 30 Novembre,Samedi,journée,off,,,,,,,off
+12.1,Semaine du 24 au 30 Novembre,Dimanche,journée,course,30.0,5:10,,,,ext,Dimanche 30 km ext à 5m10
+12.2,Lundi off,Lundi,journée,off,,,,,,,off
+12.2,Lundi off,Mardi,journée,tapis_complexe,5.0,4:40,,,2,tapis,Mardi tapis roulant 10 min à 4m40 pause 2 min / | test 5 km joue souvent avec la vitesse Up and down pour faire un meilleur chrono / | 10 min à 4m40
+12.2,Lundi off,Mercredi,journée,course,20.0,5:20,,,,ext,Mercredi 20 km ext à 5m20
+12.2,Lundi off,Jeudi,journée,course,14.0,5:15,,,,ext,Jeudi 14 km ext à 5m15
+12.2,Lundi off,Vendredi,journée,intervalles,,4:40,10,2min,2,tapis,Vendredi tapis roulant | 10 min à 4m40 pause 2 min / | 10 x 2 min à 3m25 pause 1 min  entre tes 2 min / | 10 min à 4m40
+12.2,Lundi off,Samedi,journée,course,12.0,5:10,,,,ext,Samedi 12 km ext à 5m10 Party Team Hebert
+12.2,Lundi off,Dimanche,journée,course,25.0,5:15,,,,ext,Dimanche 25 km ext à 5m15
+12.3,Semaine du 8 au 14 Décembre,Lundi,journée,off,,,,,,,off
+12.3,Semaine du 8 au 14 Décembre,Mardi,journée,intervalles,,4:40,9,3min,2,tapis,Mardi tapis roulant | 10 min à 4m40 pause 2 min / | 9 x 3 min à 3m30 pause 1m30 entre tes 3 min / | 10 min à 4m40
+12.3,Semaine du 8 au 14 Décembre,Mercredi,journée,course,18.0,5:20,,,,ext,Mercredi 18 km ext à 5m20
+12.3,Semaine du 8 au 14 Décembre,Jeudi,journée,course,14.0,5:15,,,,ext,Jeudi 14 km ext à 5m15
+12.3,Semaine du 8 au 14 Décembre,Vendredi,journée,tempo,,4:25,,,,tapis,Vendredi tapis roulant | 75 min tempo | 10 min à 4m25 | 15 min + rapide | 10 min à 4m25 | 15 min + rapide | 10 min à 4m25 | 15 min + rapide | en alternance toute d'une shot
+12.3,Semaine du 8 au 14 Décembre,Samedi,journée,course,12.0,5:10,,,,ext,Samedi 12 km ext à 5m10
+12.3,Semaine du 8 au 14 Décembre,Dimanche,journée,course,28.0,5:15,,,,ext,Dimanche 28 km ext à 5m15 tes 4 dernier km + rapide
+12.4,Semaine du 15 au 21 Décembre,Lundi,journée,off,,,,,,,off
+12.4,Semaine du 15 au 21 Décembre,Mardi,journée,intervalles,,4:40,6,3min,2,tapis,Mardi tapis roulant | 10 min à 4m40 pause 2 min / | 7 x 3m30 à 3m30 pause 1m45 entre tes 3m30 / | 10 min à 4m40 | RECOMMANDATION: | 10 min à 4m40 pause 2 min / | 6 x 3 min à 3m50 pause 2m entre tes 3 min / | 10 min à 4m40
+12.4,Semaine du 15 au 21 Décembre,Mercredi,journée,course,20.0,5:25,,,,ext,Mercredi 20 km ext à 5m25
+12.4,Semaine du 15 au 21 Décembre,Jeudi,journée,course,14.0,5:15,,,,ext,Jeudi 14 km ext à 5m15
+12.4,Semaine du 15 au 21 Décembre,Vendredi,journée,intervalles,,4:40,20,1min,2,tapis,Vendredi tapis roulant | 10 min à 4m40 pause 2 min / | 20 x 1 min à 3m20 pause 1 min entre tes 1 min / | 10 min à 4m40 | RECOMMANDATION | 10 min à 4m40 pause 2 min / | 12 x 1 min à 3m45 pause 1 min entre tes 1 min / | 10 min à 4m40
+12.4,Semaine du 15 au 21 Décembre,Samedi,journée,course,10.0,5:10,,,,ext,Samedi 10 km ext à 5m10
+12.4,Semaine du 15 au 21 Décembre,Dimanche,journée,course,30.0,5:15,,,,ext,Dimanche 30 km ext à 5m15 tes 4 dernier km + rapide
+13.1,Semaine du 22 au 28 Décembre,Lundi,journée,off,,,,,,,off
+13.1,Semaine du 22 au 28 Décembre,Mardi,journée,intervalles,,4:40,7,4min,2,tapis,Mardi tapis roulant | 10 min à 4m40 pause 2 min / | 7 x 4 min à 3m35 pause 2 min entre tes 4 min / | 10 min à 4m40
+13.1,Semaine du 22 au 28 Décembre,Mercredi,journée,course,18.0,5:30,,,,ext,Mercredi 18 km ext à 5m30
+13.1,Semaine du 22 au 28 Décembre,Jeudi,journée,course,14.0,5:20,,,,ext,Jeudi 14 km ext à 5m20
+13.1,Semaine du 22 au 28 Décembre,Vendredi,journée,tempo,,4:25,,,,tapis,Vendredi tapis roulant 90 min tempo | 15 min à 4m25 | 15 min + rapide en alternance toute d'une shot
+13.1,Semaine du 22 au 28 Décembre,Samedi,journée,course,12.0,5:10,,,,ext,Samedi 12 km ext à 5m10
+13.1,Semaine du 22 au 28 Décembre,Dimanche,journée,course,25.0,5:15,,,,ext,Dimanche 25 km ext à 5m15
+13.1,Semaine du 22 au 28 Décembre,Lundi,journée,autre,,,,,,,Lundi 23: OFF ✅
+13.1,Semaine du 22 au 28 Décembre,Mardi,journée,intervalles,,3:55,6,2min,,ext,"Mardi 24: 6x2min à 3m55-4m00 (qualité légère, pas 7x4min)"
+13.1,Semaine du 22 au 28 Décembre,Mercredi,journée,autre,,,,,,,Mercredi 25: OFF (Noël) ✅
+13.1,Semaine du 22 au 28 Décembre,Jeudi,journée,course,12.0,5:30,,,,ext,Jeudi 26: 12 km facile à 5m30
+13.1,Semaine du 22 au 28 Décembre,Vendredi,journée,autre,,,,,,,Vendredi 27: OFF ✅
+13.1,Semaine du 22 au 28 Décembre,Samedi,journée,course,10.0,5:20,,,,ext,Samedi 28: 10 km facile à 5m20
+13.1,Semaine du 22 au 28 Décembre,Dimanche,journée,course,20.0,5:25,,,,ext,Dimanche 29: 18-20 km facile à 5m25
+13.2,Semaine du 29 au 4 Janvier,Lundi,journée,off,,,,,,,off
+13.2,Semaine du 29 au 4 Janvier,Mardi,journée,intervalles,,4:40,8,3min,2,tapis,Mardi tapis roulant | 10 min à 4m40 pause 2 min / | 8 x 3 min à 3m30 pause 1m30 entre tes 3 min / | 10 min à 4m40
+13.2,Semaine du 29 au 4 Janvier,Mercredi,journée,course,20.0,5:30,,,,ext,Mercredi 20 km ext à 5m30
+13.2,Semaine du 29 au 4 Janvier,Jeudi,journée,course,14.0,5:20,,,,ext,Jeudi 14 km ext à 5m20
+13.2,Semaine du 29 au 4 Janvier,Vendredi,journée,tempo,,4:25,,,,tapis,Vendredi tapis roulant 80 min tempo | 20 min à 4m25 | 20 min + rapide | 20 min à 4m25 | 20 min + rapide | en alternance toute d'une shot
+13.2,Semaine du 29 au 4 Janvier,Samedi,journée,course,12.0,5:10,,,,ext,Samedi 12 km ext à 5m10
+13.2,Semaine du 29 au 4 Janvier,Dimanche,journée,course,28.0,5:15,,,,ext,Dimanche 28 km ext à 5m15
+13.3,Semaine du 5 au 11 Janvier,Lundi,journée,off,,,,,,,off
+13.3,Semaine du 5 au 11 Janvier,Mardi,journée,intervalles,,4:40,8,4min,2,tapis,Mardi tapis roulant | 10 min à 4m40 pause 2 min / | 8 x 4 min à 3m30 pause 2 min  entre tes 4 min / | 10 min à 4m40
+13.3,Semaine du 5 au 11 Janvier,Mercredi,journée,course,18.0,5:25,,,,ext,Mercredi 18 km ext à 5m25
+13.3,Semaine du 5 au 11 Janvier,Jeudi,journée,course,14.0,5:20,,,,ext,Jeudi 14 km ext à 5m20
+13.3,Semaine du 5 au 11 Janvier,Vendredi,journée,tapis_complexe,5.0,4:40,,,2,tapis,Vendredi tapis roulant | 10 min à 4m40 pause 2 min / | test 5 km joue souvent avec la vitesse Up and down pour un meilleur chrono / | 10 min à 4m40  / 10 min à  4m40
+13.3,Semaine du 5 au 11 Janvier,Samedi,journée,course,12.0,5:10,,,,ext,Samedi 12 km ext à 5m10
+13.3,Semaine du 5 au 11 Janvier,Dimanche,journée,course,30.0,5:15,,,,ext,Dimanche 30 km ext à 5m15
+13.4,Semaine du 12 au 18 Janvier,Lundi,journée,off,,,,,,,off
+13.4,Semaine du 12 au 18 Janvier,Mardi,journée,intervalles,,4:40,5,6min,2,tapis,Mardi tapis roulant 10 min à 4m40 pause 2 min / 5 x 6 min à 3m40 pause 3 min entre tes 6 min / 10 min à 4m40
+13.4,Semaine du 12 au 18 Janvier,Mercredi,journée,course,16.0,5:20,,,,tapis,Mercredi 16 km tapis roulant à 5m20
+13.4,Semaine du 12 au 18 Janvier,Jeudi,journée,course,10.0,5:00,,,,tapis,Jeudi 10 km tapis roulant  à 5m00
+13.4,Semaine du 12 au 18 Janvier,Vendredi,journée,course,5.0,4:40,,,,tapis,Vendredi tapis roulant 10 min à 4m40 pause 2 min / test 5 km joue souvent avec la vitesse Up and down pour un meilleur chrono / 10 min à 4m40
+13.4,Semaine du 12 au 18 Janvier,Samedi,journée,course,12.0,5:10,,,,tapis,Samedi tapis roulant 12 km à 5m10
+13.4,Semaine du 12 au 18 Janvier,Dimanche,journée,course,28.0,5:15,,,,tapis,Dimanche 28 km tapis  à 5m15 tes 5 dernier km + rapide
+14.1,Semaine du 19 au 25 Janvier,Lundi,journée,course,16.0,5:25,,,,ext,Lundi 16 km ext à 5m25
+14.1,Semaine du 19 au 25 Janvier,Mardi,journée,off,,,,,,,off
+14.1,Semaine du 19 au 25 Janvier,Mercredi,journée,intervalles,,4:40,8,4min,2,tapis,Mercredi tapis roulant 10 min à 4m40 pause 2 min / 8 x 4 min à 3m35 pause 2 min entre tes 4 min / 10 min à 4m40
+14.1,Semaine du 19 au 25 Janvier,Jeudi,journée,course,14.0,5:20,,,,ext,Jeudi 14 km ext à 5m20
+14.1,Semaine du 19 au 25 Janvier,Vendredi,journée,intervalles,,4:40,22,1min,2,tapis,Vendredi tapis | 10 min à 4m40 pause 2 min / | 22 x 1 min à 3m25 pause 1 min entre tes 1 min  / | 10 min à 4m40
+14.1,Semaine du 19 au 25 Janvier,Samedi,journée,course,10.0,5:10,,,,ext,Samedi  10 km ext à 5m10
+14.1,Semaine du 19 au 25 Janvier,Dimanche,journée,course,34.0,5:15,,,,ext,Dimanche 34 km ext à 5m15
+14.2,Semaine du 26 au 1 Février,Lundi,journée,off,,,,,,,off
+14.2,Semaine du 26 au 1 Février,Mardi,journée,intervalles,,4:40,4,8min,2,tapis,Mardi tapis roulant | 10 min à 4m40 pause 2 min / | 4 x 8 min à 3m50 pause 4 min entre tes 8 min / | 10 min à 4m40
+14.2,Semaine du 26 au 1 Février,Mercredi,journée,course,20.0,5:30,,,,ext,Mercredi 20 km ext à 5m30
+14.2,Semaine du 26 au 1 Février,Jeudi,journée,course,14.0,5:20,,,,ext,Jeudi 14 km ext à 5m20
+14.2,Semaine du 26 au 1 Février,Vendredi,journée,tempo,16.0,4:40,,,,tapis,Vendredi tapis roulant 16 km  tempo | 3 km à 4m40 | 3 km  Pace Marathon | 1 km à 4m40 | 2 km pace Demi Marathon | 1 km à 4m40 | 2 km Pace 10 km | 1 km à 4m40 | 1 km Pace 5 km | 2 km à 4m40
+14.2,Semaine du 26 au 1 Février,Samedi,journée,course,12.0,5:10,,,,ext,Samedi 12 km ext à 5m10
+14.2,Semaine du 26 au 1 Février,Dimanche,journée,course,28.0,5:10,,,,ext,Dimanche 28 km ext à 5m10 tes 4 dernier km + rapide
+14.3,Semaine du 2 au 8 Février,Lundi,journée,off,,,,,,,off
+14.3,Semaine du 2 au 8 Février,Mardi,journée,intervalles,,4:40,8,4min,2,tapis,Mardi tapis roulant | 10 min à 4m40 pause 2 min / | 8 x 4 min à 3m35 pause 2 min entre tes 4 min / | 10 min à 4m40
+14.3,Semaine du 2 au 8 Février,Mercredi,journée,course,18.0,5:30,,,,ext,Mercredi 18 km ext à 5m30
+14.3,Semaine du 2 au 8 Février,Jeudi,journée,course,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15
+14.3,Semaine du 2 au 8 Février,Vendredi,journée,tempo,18.0,4:40,,,,tapis,Vendredi tapis roulant 18 km  tempo | 3 km à 4m40 | 4 km  Pace Marathon | 1 km à 4m40 | 4 km pace Demi Marathon | 1 km à 4m40 | 2 km Pace 5 km | 3 km à 4m40
+14.3,Semaine du 2 au 8 Février,Samedi,journée,course,12.0,5:10,,,,ext,Samedi 12 km ext à 5m10
+14.3,Semaine du 2 au 8 Février,Dimanche,journée,course,32.0,5:15,,,,ext,Dimanche 32 km ext à 5m15
+14.4,Semaine du 9 au 15 Février,Lundi,journée,off,,,,,,,off
+14.4,Semaine du 9 au 15 Février,Mardi,journée,intervalles,,4:40,10,3min,2,tapis,Mardi tapis roulant | 10 min à 4m40 pause 2 min / | 10 x 3 min à 3m30 pause 1m30 entre tes 3 min / | 10 min à 4m40
+14.4,Semaine du 9 au 15 Février,Mercredi,journée,course,20.0,5:30,,,,ext,Mercredi 20 km ext à 5m30
+14.4,Semaine du 9 au 15 Février,Jeudi,journée,course,14.0,5:20,,,,ext,Jeudi 14 km ext à 5m20
+14.4,Semaine du 9 au 15 Février,Vendredi,journée,intervalles,,4:40,12,2min,2,tapis,Vendredi tapis roulant | 10 min à 4m40 pause 2 min / | 12 x 2 min à 3m25 pause 1 min entre tes 2 min / | 10 min à 4m40
+14.4,Semaine du 9 au 15 Février,Samedi,journée,course,14.0,5:15,,,,ext,Samedi 14 km ext à 5m15
+14.4,Semaine du 9 au 15 Février,Dimanche,journée,course,26.0,5:15,,,,ext,Dimanche 26 km ext à 5m15 tes 4 dernier km + rapide
+15.1,Semaine du 16 au 22 Février,Lundi,journée,off,,,,,,,off
+15.1,Semaine du 16 au 22 Février,Mardi,matin,intervalles,,4:40,9,3min,2,tapis,Mardi matin tapis roulant | 10 min à 4m40 pause 2 min / | 9 x 3 min à 3m30 pause 1m30 entre tes 3 min / | 10 min à 4m40
+15.1,Semaine du 16 au 22 Février,Mardi,soir,course,10.0,5:15,,,,ext,Mardi soir 10 km ext à  5m15
+15.1,Semaine du 16 au 22 Février,Mercredi,journée,course,20.0,5:35,,,,ext,Mercredi 20 km ext à 5m35
+15.1,Semaine du 16 au 22 Février,Jeudi,journée,course,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15
+15.1,Semaine du 16 au 22 Février,Vendredi,journée,tempo,18.0,4:40,,,,tapis,Vendredi tapis roulant 18 km  tempo | 3 km à 4m40 | 3 km  Pace Marathon | 1 km à 4m40 | 4 km pace Demi Marathon | 1 km à 4m40 | 3 km Pace 10 km | 3 km à 4m40
+15.1,Semaine du 16 au 22 Février,Samedi,journée,course,12.0,5:10,,,,ext,Samedi 12 km ext à 5m10
+15.1,Semaine du 16 au 22 Février,Dimanche,journée,course,28.0,5:15,,,,ext,Dimanche 28 km ext à 5m15
+15.2,Semaine du 23 au 1 er Mars,Lundi,journée,off,,,,,,,off
+15.2,Semaine du 23 au 1 er Mars,Mardi,matin,intervalles,,4:40,8,4min,2,tapis,Mardi matin tapis roulant | 10 min à 4m40 pause 2 min / | 8 x 4 min à 3m35 pause 2 min entre tes 4 min / | 10 min à 4m40
+15.2,Semaine du 23 au 1 er Mars,Mardi,soir,course,10.0,5:15,,,,ext,Mardi soir 10 km ext à 5m15
+15.2,Semaine du 23 au 1 er Mars,Mercredi,journée,course,18.0,5:25,,,,ext,Mercredi 18 km ext à 5m25
+15.2,Semaine du 23 au 1 er Mars,Jeudi,journée,course,14.0,5:20,,,,ext,Jeudi 14 km ext à 5m20
+15.2,Semaine du 23 au 1 er Mars,Vendredi,journée,intervalles,,4:40,13,2min,2,tapis,Vendredi tapis roulant | 10 min à 4m40 pause 2 min / | 13 x 2 min à 3m25 pause 1 min entre tes 2 min / | 10 min à 4m40
+15.2,Semaine du 23 au 1 er Mars,Samedi,journée,course,10.0,5:10,,,,ext,Samedi 10 km ext à 5m10
+15.2,Semaine du 23 au 1 er Mars,Dimanche,journée,course,34.0,5:15,,,,ext,Dimanche 34 km ext à 5m15 tes 4 dernier km + rapide
+15.3,Semaine du 2 au 8 Mars,Lundi,journée,off,,,,,,,off
+15.3,Semaine du 2 au 8 Mars,Mardi,matin,intervalles,,4:40,6,5min,2,tapis,Mardi matin tapis roulant | 10 min à 4m40 pause 2 min / | 6 x 5 min à 3m40 pause 2m30 entre tes 5 min / | 10 min à 4m40
+15.3,Semaine du 2 au 8 Mars,Mardi,soir,course,12.0,5:15,,,,ext,Mardi soir 12 km ext à 5m15
+15.3,Semaine du 2 au 8 Mars,Mercredi,journée,course,18.0,5:30,,,,ext,Mercredi 18 km ext à 5m30
+15.3,Semaine du 2 au 8 Mars,Jeudi,journée,course,14.0,5:20,,,,ext,Jeudi 14 km ext à 5m20
+15.3,Semaine du 2 au 8 Mars,Vendredi,journée,tempo,17.0,4:40,,,,tapis,Vendredi tapis roulant 17 km  tempo | 3 km à 4m40 | 5 km  Pace Marathon | 1 km à 4m40 | 5 km Pace 10 km | 3 km à 4m40
+15.3,Semaine du 2 au 8 Mars,Samedi,journée,course,14.0,5:20,,,,ext,Samedi 14 km ext à 5m20
+15.3,Semaine du 2 au 8 Mars,Dimanche,journée,course,26.0,5:15,,,,ext,Dimanche 26 km ext à 5m15 tes 4 dernier km + rapide
+15.4,Semaine du 9 au 15 Mars,Lundi,journée,off,,,,,,,off
+15.4,Semaine du 9 au 15 Mars,Mardi,matin,intervalles,,4:40,20,1min,2,tapis,Mardi matin tapis roulant | 10 min à 4m40 pause 2 min / | 20 x 1 min à 3m15 pause 1 min entre tes 1 min / | 10 min à 4m40
+15.4,Semaine du 9 au 15 Mars,Mardi,soir,course,10.0,5:15,,,,ext,Mardi soir 10 km ext à 5m15
+15.4,Semaine du 9 au 15 Mars,Mercredi,journée,course,20.0,5:25,,,,ext,Mercredi 20 km ext à 5m25
+15.4,Semaine du 9 au 15 Mars,Jeudi,journée,course,14.0,5:20,,,,ext,Jeudi 14 km ext à 5m20
+15.4,Semaine du 9 au 15 Mars,Vendredi,journée,tapis_complexe,5.0,4:40,,,2,tapis,Vendredi tapis roulant | 10 min à 4m40 pause 2 min / | test 5 km joue souvent  avec la vitesse du tapis Up and down pour un meilleur chrono / | 10 min à 4m40
+15.4,Semaine du 9 au 15 Mars,Samedi,journée,course,10.0,5:10,,,,ext,Samedi 10 km ext à 5m10
+15.4,Semaine du 9 au 15 Mars,Dimanche,journée,course,30.0,5:15,,,,ext,Dimanche 30 km ext à 5m15 tes 5 dernier km + rapide
+16.1,Semaine du 16 au 22 Mars,Lundi,journée,off,,,,,,,off
+16.1,Semaine du 16 au 22 Mars,Mardi,matin,intervalles,,4:40,10,3min,2,tapis,Mardi matin tapis roulant | 10 min à 4m40 pause 2 min / | 10 x 3 min à 3m30 pause 1m30 entre tes 3 min / | 10 min à 4m40
+16.1,Semaine du 16 au 22 Mars,Mardi,soir,course,12.0,5:15,,,,ext,Mardi soir 12 km ext à 5m15
+16.1,Semaine du 16 au 22 Mars,Mercredi,journée,course,20.0,5:30,,,,ext,Mercredi 20 km ext à 5m30
+16.1,Semaine du 16 au 22 Mars,Jeudi,journée,course,14.0,5:20,,,,ext,Jeudi 14 km ext à 5m20
+16.1,Semaine du 16 au 22 Mars,Vendredi,journée,tempo,17.0,4:40,,,,tapis,Vendredi tapis roulant 17 km  tempo | 3 km à 4m40 | 6 km Pace Marathon | 1 km à 4m40 | 4 km Pace Demi Marathon | 3 km à 4m40
+16.1,Semaine du 16 au 22 Mars,Samedi,journée,course,15.0,5:25,,,,ext,Samedi 15 km ext à 5m25
+16.1,Semaine du 16 au 22 Mars,Dimanche,journée,course,25.0,5:15,,,,ext,Dimanche 25 km ext à 5m15 tes 5 dernier + rapide
+16.2,Semaine du 23 au 29 Mars,Lundi,journée,off,,,,,,,off
+16.2,Semaine du 23 au 29 Mars,Mardi,matin,intervalles,,4:40,8,4min,2,tapis,Mardi matin tapis roulant | 10 min à 4m40 pause 2 min / | 8 x 4 min à 3m40 pause 2 min entre tes 4 min / | 10 min à 4m40
+16.2,Semaine du 23 au 29 Mars,Mardi,soir,course,10.0,5:15,,,,ext,Mardi soir 10 km ext à 5m15
+16.2,Semaine du 23 au 29 Mars,Mercredi,journée,course,18.0,5:25,,,,ext,Mercredi 18 km ext à 5m25
+16.2,Semaine du 23 au 29 Mars,Jeudi,journée,course,14.0,5:20,,,,ext,Jeudi 14 km ext à 5m20
+16.2,Semaine du 23 au 29 Mars,Vendredi,journée,intervalles,,4:40,12,2min,2,tapis,Vendredi tapis roulant | 10 min à 4m40 pause 2 min / | 12 x 2 min à 3m30 pause 1 min entre tes 2 min / | 10 min à 3m25
+16.2,Semaine du 23 au 29 Mars,Vendredi,soir,course,10.0,5:15,,,,ext,Vendredi soir 10 km à 5m15
+16.2,Semaine du 23 au 29 Mars,Samedi,journée,course,10.0,5:10,,,,ext,Samedi 10 km ext à 5m10
+16.2,Semaine du 23 au 29 Mars,Dimanche,journée,course,35.0,5:15,,,,ext,Dimanche 35 km ext à 5m15 tes 5 dernier + rapide
+16.2,Semaine du 23 au 29 Mars,Dimanche,soir,course,10.0,5:15,,,,ext,Dimanche soir 10 km ext à 5m15
+16.3,Semaine du 30 au 5 Avril,Lundi,soir,course,12.0,5:15,,,,ext,Lundi soir 12 km ext à 5m15
+16.3,Semaine du 30 au 5 Avril,Mardi,matin,course,22.0,5:35,,,,ext,Mardi matin 22 km ext à 5m35
+16.3,Semaine du 30 au 5 Avril,Mardi,soir,course,8.0,5:10,,,,ext,Mardi soir 8 km ext à 5m10
+16.3,Semaine du 30 au 5 Avril,Mercredi,matin,course,18.0,5:25,,,,ext,Mercredi matin 18 km ext à 5m25
+16.3,Semaine du 30 au 5 Avril,Jeudi,matin,course,14.0,5:20,,,,ext,Jeudi matin 14 km ext à 5m20
+16.3,Semaine du 30 au 5 Avril,Vendredi,journée,tempo,21.0,4:40,,,,tapis,Vendredi tapis roulant 21 km tempo | 3 km à 4m40 | 7 km Pace Marathon | 1 km à 4m40 | 7 km Pace Marathon | 3 km à 4m40
+16.3,Semaine du 30 au 5 Avril,Samedi,journée,course,15.0,5:25,,,,ext,Samedi 15 km ext à 5m25
+16.3,Semaine du 30 au 5 Avril,Dimanche,journée,autre,25.0,5:15,,,,ext,Dimanche 25 km ext à 5m15 | tes 5 dernier km pace Marathon
+16.4,Semaine du 6 au 12 Avril,Lundi,journée,off,,,,,,,off
+16.4,Semaine du 6 au 12 Avril,Mardi,matin,intervalles,,4:40,4,7min,2,tapis,Mardi matin tapis roulant | 10 min à 4m40 pause 2 min / | 4 x 7 min à 3m50 pause 3 min entre tes 7 min / | 10 min à 4m40
+16.4,Semaine du 6 au 12 Avril,Mardi,soir,course,10.0,5:15,,,,ext,Mardi soir 10 km ext à 5m15
+16.4,Semaine du 6 au 12 Avril,Mercredi,journée,course,20.0,5:30,,,,ext,Mercredi 20 km ext à 5m30
+16.4,Semaine du 6 au 12 Avril,Jeudi,journée,course,14.0,5:20,,,,ext,Jeudi 14 km ext à 5m20
+16.4,Semaine du 6 au 12 Avril,Vendredi,journée,intervalles,,4:40,22,1min,2,tapis,Vendredi tapis roulant | 10 min à 4m40 pause 2 min / | 22 x 1 min à 3m20 pause 1 min entre tes 1 min / | 10 min à 3m25
+16.4,Semaine du 6 au 12 Avril,Vendredi,soir,course,10.0,5:15,,,,ext,Vendredi soir 10 km à 5m15
+16.4,Semaine du 6 au 12 Avril,Samedi,journée,course,12.0,5:10,,,,ext,Samedi 12 km ext à 5m10
+16.4,Semaine du 6 au 12 Avril,Dimanche,journée,course,28.0,5:10,,,,ext,Dimanche 28 km ext à 5m10 tes 4 dernier + rapide
+16.4,Semaine du 6 au 12 Avril,Dimanche,soir,course,10.0,5:15,,,,ext,Dimanche soir 10 km ext à 5m15
+17.1,Semaine du 13 au 19 Avril,Lundi,journée,off,,,,,,,off
+17.1,Semaine du 13 au 19 Avril,Mardi,journée,intervalles,2.0,4:40,6,1000m,2,ext,2 km ext à 4m40 pause 2 min / | 6 x 1000m à 3m40 pause 2 min entre tes 1000m / | 2 km à 4m40
+17.1,Semaine du 13 au 19 Avril,Mardi,soir,course,10.0,5:10,,,,ext,Mardi soir 10 km ext à 5m10
+17.1,Semaine du 13 au 19 Avril,Mercredi,journée,course,20.0,5:30,,,,ext,Mercredi 20 km ext à 5m30
+17.1,Semaine du 13 au 19 Avril,Jeudi,journée,course,14.0,5:20,,,,ext,Jeudi 14 km ext à 5m20
+17.1,Semaine du 13 au 19 Avril,Vendredi,journée,intervalles,2.0,4:40,10,500m,2,ext,2 km ext à 4m40 pause 2 min / | 10 x 500m à 3m25 pause 1m30 entre tes 500m / | 2 km à 4m40
+17.1,Semaine du 13 au 19 Avril,Vendredi,soir,course,10.0,5:10,,,,ext,Vendredi soir 10 km ext à 5m10
+17.1,Semaine du 13 au 19 Avril,Samedi,journée,course,10.0,5:10,,,,ext,Samedi 10 km ext à 5m10
+17.1,Semaine du 13 au 19 Avril,Dimanche,journée,course,35.0,5:15,,,,ext,Dimanche 35 km ext à 5m15 tes 5 dernier km + rapide
+17.2,Semaine du 20 au 26 Avril,Lundi,journée,off,,,,,,,off
+17.2,Semaine du 20 au 26 Avril,Mardi,journée,intervalles,2.0,4:40,4,1500m,2,ext,2 km ext à 4m40 pause 2 min / | 4 x 1500m à 3m45 pause 2m30 entre tes 1500m / | 2 km à 4m40
+17.2,Semaine du 20 au 26 Avril,Mercredi,journée,course,16.0,5:20,,,,ext,Mercredi 16 km ext à 5m20
+17.2,Semaine du 20 au 26 Avril,Jeudi,journée,course,14.0,5:15,,,,ext,Jeudi 14 km ext à 5m15
+17.2,Semaine du 20 au 26 Avril,Vendredi,journée,intervalles,2.0,4:40,12,400m,2,ext,2 km ext à 4m40 pause 2 min / | 12 x 400m à 3m20 pause 1m25 entre tes 400m / | 2 km à 4m40
+17.2,Semaine du 20 au 26 Avril,Samedi,journée,course,10.0,5:00,,,,ext,Samedi 10 km ext à 5m00
+17.2,Semaine du 20 au 26 Avril,Dimanche,journée,autre,16.0,5:00,,,,ext,Dimanche 16 km ext à 5m00 tes derniers 4 km à 3m50 | Pas + de km vu Lévis le weekend prochain
+17.3,Semaine du 27 au 3 Mai,Lundi,journée,course,12.0,5:10,,,,ext,Lundi 12 km ext à 5m10
+17.3,Semaine du 27 au 3 Mai,Mardi,journée,course,14.0,5:20,,,,ext,Mardi 14 km ext à 5m20
+17.3,Semaine du 27 au 3 Mai,Mercredi,journée,intervalles,2.0,4:40,2,1000m,2,ext,2 km ext à 4m40 pause 2 min / | 2 x 1000m à 3m45 pause 2 min entre tes 1000m / | 10 x 300m à 3m20 pause 1m15 entre tes 300m / | 2 km à 4m40
+17.3,Semaine du 27 au 3 Mai,Jeudi,journée,course,10.0,5:10,,,,ext,Jeudi 10 km ext à 5m10
+17.3,Semaine du 27 au 3 Mai,Vendredi,journée,off,,,,,,,off
+17.3,Semaine du 27 au 3 Mai,Samedi,journée,off,,,,,,,off
+17.3,Semaine du 27 au 3 Mai,Dimanche,journée,course,9.0,5:15,,,,ext,Dimanche Demi marathon de Lévis tu suite  après rajoute toi 9 km à 5m15
+17.4,Semaine du 4 au 10 Mai,Lundi,journée,off,,,,,,,off
+17.4,Semaine du 4 au 10 Mai,Mardi,journée,intervalles,2.0,4:40,4,1200m,2,ext,2 km ext à 4m40 pause 2 min / | 4 x 1200m à 3m50 pause 2m20 entre tes 1200m  pas + vite / | 2 km à 4m40
+17.4,Semaine du 4 au 10 Mai,Mercredi,journée,course,18.0,5:30,,,,ext,Mercredi 18 km ext à 5m30
+17.4,Semaine du 4 au 10 Mai,Jeudi,journée,course,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15
+17.4,Semaine du 4 au 10 Mai,Vendredi,journée,tempo,12.0,4:40,,,,ext,Vendredi 12 km tempo | en alternance toute d'une shot pas + vite | 3 km à 4m40 | 3 km à 4m05 | 3 km à 4m40 | 3 km à 4m05
+17.4,Semaine du 4 au 10 Mai,Samedi,journée,course,10.0,5:10,,,,ext,Samedi 10 km ext à 5m10
+17.4,Semaine du 4 au 10 Mai,Dimanche,journée,course,24.0,5:15,,,,ext,Dimanche 24 km ext à 5m15 tes 5 dernier km pas + vite que 4m10
+18.1,Semaine du 11 au 17 Mai,Lundi,journée,off,,,,,,,off
+18.1,Semaine du 11 au 17 Mai,Mardi,journée,course,14.0,5:20,,,,ext,Mardi 14 km ext à 5m20
+18.1,Semaine du 11 au 17 Mai,Mercredi,journée,intervalles,2.0,4:40,6,800m,2,ext,2 km ext à 4m40 pause 2 min / | 6 x 800m à 3m35 pause 1m50 entre tes 800m / | 2 km à 4m40
+18.1,Semaine du 11 au 17 Mai,Jeudi,journée,course,16.0,5:25,,,,ext,Jeudi 16 km ext à 5m25
+18.1,Semaine du 11 au 17 Mai,Vendredi,journée,course,12.0,5:15,,,,ext,Vendredi 12 km ext à 5m15
+18.1,Semaine du 11 au 17 Mai,Samedi,journée,off,,,,,,,off
+18.1,Semaine du 11 au 17 Mai,Dimanche,journée,tempo,15.0,5:00,,,,ext,Dimanche 15 km ext Tempo | 5 km à 5m00 | 5 km Pace Demi Marathon | 5 km à 5m00
+18.2,Semaine du 18 au 24 Mai,Lundi,journée,autre,14.0,5:20,,,,ext,matin 14 km ext à 5m20 | soir 8 km ext à 5m00
+18.2,Semaine du 18 au 24 Mai,Mardi,journée,course,12.0,5:15,,,,ext,Mardi 12 km ext à 5m15
+18.2,Semaine du 18 au 24 Mai,Mercredi,journée,intervalles,2.0,4:40,10,300m,2,ext,2 km ext à 4m40 pause 2 min / | 10 x 300m à 3m20 pause 1m15 entre tes 300m pas + vite / | 2 km à 4m40
+18.2,Semaine du 18 au 24 Mai,Jeudi,journée,off,,,,,,,off
+18.2,Semaine du 18 au 24 Mai,Vendredi,journée,off,,,,,,,off
+18.2,Semaine du 18 au 24 Mai,Samedi,journée,off,,,,,,,off
+18.2,Semaine du 18 au 24 Mai,Dimanche,journée,course_officielle,,,,,,,Dimanche Marathon Buffalo  Letsgo
+18.3,Semaine du 25 au 31 Mai,Lundi,journée,off,,,,,,,off
+18.3,Semaine du 25 au 31 Mai,Mardi,journée,off,,,,,,,off
+18.3,Semaine du 25 au 31 Mai,Mercredi,journée,off,,,,,,,off
+18.3,Semaine du 25 au 31 Mai,Jeudi,journée,intervalles,2.0,4:40,10,300m,2,ext,2 km ext à 4m40 pause 2 min / | 10 x 300m à rapide pour enlever  la lourdeur du marathon pause 1m15 entre tes 300m / | 2 km à 4m40
+18.3,Semaine du 25 au 31 Mai,Vendredi,journée,course,12.0,5:10,,,,ext,12 km ext à 5m10
+18.3,Semaine du 25 au 31 Mai,Samedi,journée,off,,,,,,,off
+18.3,Semaine du 25 au 31 Mai,Dimanche,journée,course,18.0,5:10,,,,ext,18 km ext à 5m10 tes 4 dernier + rapide
+18.4 1er au 7 juin.txt,Semaine du 1 er au 7 Juin,Lundi,journée,off,,,,,,,off
+18.4 1er au 7 juin.txt,Semaine du 1 er au 7 Juin,Mardi,journée,course,14.0,5:15,,,,ext,Mardi 14 km ext à 5m15
+18.4 1er au 7 juin.txt,Semaine du 1 er au 7 Juin,Mercredi,journée,intervalles,2.0,4:40,6,1000m,2,ext,2 km ext à 4m40 pause 2 min / | 6 x 1000m à 3m35 pause 2 min entre tes 1000m / | 2 km à 4m40
+18.4 1er au 7 juin.txt,Semaine du 1 er au 7 Juin,Jeudi,journée,course,18.0,5:25,,,,ext,Jeudi 18 km ext à 5m25
+18.4 1er au 7 juin.txt,Semaine du 1 er au 7 Juin,Vendredi,journée,course,12.0,5:10,,,,ext,Vendredi 12 km ext à 5m10
+18.4 1er au 7 juin.txt,Semaine du 1 er au 7 Juin,Samedi,journée,course,10.0,5:00,,,,ext,Samedi 10 km ext à 5m00
+18.4 1er au 7 juin.txt,Semaine du 1 er au 7 Juin,Dimanche,journée,course,24.0,5:15,,,,ext,Dimanche 24 km ext à 5m15 tes 4 dernier + rapide
+19.1,Semaine du 8 au 14 Juin,Lundi,journée,off,,,,,,,off
+19.1,Semaine du 8 au 14 Juin,Mardi,journée,course,16.0,5:20,,,,ext,Mardi 16 km ext à 5m20
+19.1,Semaine du 8 au 14 Juin,Mercredi,journée,course,14.0,5:15,,,,ext,Mercredi 14 km ext à 5m15
+19.1,Semaine du 8 au 14 Juin,Jeudi,journée,course,12.0,5:10,,,,ext,Jeudi 12 km ext à 5m10
+19.1,Semaine du 8 au 14 Juin,Vendredi,journée,course,18.0,5:25,,,,ext,Vendredi 18 km ext à 5m25
+19.1,Semaine du 8 au 14 Juin,Samedi,journée,course,15.0,5:20,,,,ext,Samedi 15 km ext à  5m20
+19.1,Semaine du 8 au 14 Juin,Dimanche,journée,course,25.0,5:10,,,,ext,Dimanche 25 km ext à 5m10 tes 4 dernier + rapide
+2.1,Semaine du 17 au 23 Février  - ENDURANCE: 56 km,Lundi,journée,off,,,,,,,off
+2.1,Semaine du 17 au 23 Février  - ENDURANCE: 56 km,Mardi,journée,tempo,,5:10,,,,tapis,Mardi tapis roulant | 60 min tempo | 15 min à 5m10 | 15 min à 4m35 | 15 min à 5m10 | 15 min à 4m35 | en alternance toute d'une shot
+2.1,Semaine du 17 au 23 Février  - ENDURANCE: 56 km,Mercredi,journée,autre,20.0,5:40,,,,ext,Mercredi 20 km ext à 5m40 | 148 bpm
+2.1,Semaine du 17 au 23 Février  - ENDURANCE: 56 km,Jeudi,journée,autre,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15 | 154 bpm
+2.1,Semaine du 17 au 23 Février  - ENDURANCE: 56 km,Vendredi,journée,intervalles,,5:10,7,3min,2,tapis,Vendredi tapis roulant | 10 min à 5m10 pause 2 min / | 7 x 3 min à 4m15 pause 1m30 entre tes 3 min / | 10 min à 5m10
+2.1,Semaine du 17 au 23 Février  - ENDURANCE: 56 km,Samedi,journée,off,,,,,,,off
+2.1,Semaine du 17 au 23 Février  - ENDURANCE: 56 km,Dimanche,journée,autre,24.0,5:40,,,,ext,Dimanche 24 km ext à 5m40 | 146 bpm
+2.2,Semaine du 24 au 2 Mars  - ENDURANCE: 55 km,Lundi,journée,off,,,,,,,off
+2.2,Semaine du 24 au 2 Mars  - ENDURANCE: 55 km,Mardi,journée,tempo,,5:10,,,,tapis,Mardi tapis roulant | 80 min tempo | 20 min à 5m10 | 20 min à 4m40 | 20 min à 5m10 | 20 min à 4m40 | en alternance toute d'une shot
+2.2,Semaine du 24 au 2 Mars  - ENDURANCE: 55 km,Mercredi,journée,autre,18.0,5:40,,,,ext,Mercredi 18 km ext à 5m40 | 148 bpm
+2.2,Semaine du 24 au 2 Mars  - ENDURANCE: 55 km,Jeudi,journée,autre,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15 | 153 bpm
+2.2,Semaine du 24 au 2 Mars  - ENDURANCE: 55 km,Vendredi,journée,intervalles,,5:10,,,2,tapis,Vendredi tapis roulant | 10 min à 5m10 pause 2 min / | 14 x 1m30 à 4m05 pause 1 min entre tes 1m30  / | 10 min à 5m10
+2.2,Semaine du 24 au 2 Mars  - ENDURANCE: 55 km,Samedi,journée,off,,,,,,,off
+2.2,Semaine du 24 au 2 Mars  - ENDURANCE: 55 km,Dimanche,journée,autre,25.0,5:40,,,,ext,Dimanche 25 km ext à 5m40 | 149 bpm
+2.3,Semaine du 3 au 9 Mars  - ENDURANCE: 59 km,Lundi,journée,off,,,,,,,off
+2.3,Semaine du 3 au 9 Mars  - ENDURANCE: 59 km,Mardi,journée,intervalles,,5:00,5,5min,2,tapis,Mardi tapis roulant | 10 min à 5m00 pause 2 min / | 5 x 5 min à 4m20 pause 2m30  entre tes 5 min / | 10 min à 5m00
+2.3,Semaine du 3 au 9 Mars  - ENDURANCE: 59 km,Mercredi,journée,autre,20.0,5:40,,,,ext,Mercredi 20 km ext à 5m40 | 144 bpm
+2.3,Semaine du 3 au 9 Mars  - ENDURANCE: 59 km,Jeudi,journée,autre,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15 | 151 bpm
+2.3,Semaine du 3 au 9 Mars  - ENDURANCE: 59 km,Vendredi,journée,intervalles,,5:00,18,1min,2,tapis,Vendredi tapis roulant | 10 min à 5m00 pause 2 min / | 18 x 1 min à 4m00 pause 1 min entre tes 1 min / | 10 min à 5m00
+2.3,Semaine du 3 au 9 Mars  - ENDURANCE: 59 km,Samedi,journée,off,,,,,,,off
+2.3,Semaine du 3 au 9 Mars  - ENDURANCE: 59 km,Dimanche,journée,course,27.0,5:40,,,,ext,Dimanche 27 km ext à 5m40
+2.4,Semaine du 10 au 16 Mars - ENDURANCE : 59 km,Lundi,journée,off,,,,,,,off
+2.4,Semaine du 10 au 16 Mars - ENDURANCE : 59 km,Mardi,journée,tempo,,5:10,,,,tapis,Mardi tapis roulant | 90 min tempo | 15 min à 5m10 | 15 min à 4m35 | 15 min à 5m10 | 15 min à 4m35 | 15 min à 5m10 | 15 min à 4m35 | en alternance toute d'une shot
+2.4,Semaine du 10 au 16 Mars - ENDURANCE : 59 km,Mercredi,journée,autre,20.0,5:40,,,,ext,Mercredi 20 km ext à 5m40 | 148 bpm
+2.4,Semaine du 10 au 16 Mars - ENDURANCE : 59 km,Jeudi,journée,autre,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15 | 156 bpm
+2.4,Semaine du 10 au 16 Mars - ENDURANCE : 59 km,Vendredi,journée,intervalles,,5:10,10,2min,2,tapis,Vendredi tapis roulant | 10 min à 5m10 pause 2 min / | 10 x 2 min  à 4m10 pause 1 min entre tes 2 min  / | 10 min à 5m10
+2.4,Semaine du 10 au 16 Mars - ENDURANCE : 59 km,Samedi,journée,off,,,,,,,off
+2.4,Semaine du 10 au 16 Mars - ENDURANCE : 59 km,Dimanche,journée,autre,27.0,5:40,,,,ext,Dimanche 27 km ext à 5m40 | 143 bpm
+3.1,Semaine du 17 au 23 Mars - ENDURANCE 64 km,Lundi,journée,off,,,,,,,off
+3.1,Semaine du 17 au 23 Mars - ENDURANCE 64 km,Mardi,journée,intervalles,,5:00,3,7min,2,tapis,Mardi tapis roulant | 10 min à 5m00 pause 2 min / | 3 x 7 min à 4m30 pause 3m30  entre tes 7 min / | 3 x 3 min à 4m10 pause 1m30 entre tes 3 min / | 10 min à 5m00
+3.1,Semaine du 17 au 23 Mars - ENDURANCE 64 km,Mercredi,journée,autre,22.0,5:40,,,,ext,Mercredi 22 km ext à 5m40 | 144 bpm
+3.1,Semaine du 17 au 23 Mars - ENDURANCE 64 km,Jeudi,journée,autre,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15 | 153 bpm
+3.1,Semaine du 17 au 23 Mars - ENDURANCE 64 km,Vendredi,journée,intervalles,,5:00,10,2min,2,tapis,Vendredi tapis roulant | 10 min à 5m00 pause 2 min / | 10 x 2 min à 4m05 pause 1 min entre tes 2 min / | 10 min à 5m00
+3.1,Semaine du 17 au 23 Mars - ENDURANCE 64 km,Samedi,journée,off,,,,,,,off
+3.1,Semaine du 17 au 23 Mars - ENDURANCE 64 km,Dimanche,journée,course,30.0,5:30,,,,ext,Dimanche 30 km ext à 5m30
+3.2,Semaine du 24 au 30 Mars - ENDURANCE 60 km,Lundi,journée,off,,,,,,,off
+3.2,Semaine du 24 au 30 Mars - ENDURANCE 60 km,Mardi,journée,tempo,,5:10,,,,tapis,Mardi tapis roulant | 80 min tempo | 20 min à 5m10 | 20 min à 4m35 | 20 min à 5m10 | 20 min à 4m35 | en alternance toute d'une shot
+3.2,Semaine du 24 au 30 Mars - ENDURANCE 60 km,Mercredi,journée,course,22.0,5:40,,,,ext,Mercredi 22 km ext à 5m40
+3.2,Semaine du 24 au 30 Mars - ENDURANCE 60 km,Jeudi,journée,course,14.0,5:25,,,,ext,Jeudi 14 km ext à 5m25
+3.2,Semaine du 24 au 30 Mars - ENDURANCE 60 km,Vendredi,journée,intervalles,,5:10,20,1min,2,tapis,Vendredi tapis roulant | 10 min à 5m10 pause 2 min / | 20 x 1 min à 4m00 pause 1 min entre tes 1 min  / | 10 min à 5m10
+3.2,Semaine du 24 au 30 Mars - ENDURANCE 60 km,Samedi,journée,off,,,,,,,off
+3.2,Semaine du 24 au 30 Mars - ENDURANCE 60 km,Dimanche,journée,tempo,24.0,5:10,,,,ext,Dimanche 24 km ext tempo | 4 km à 5m10 | 4 km + rapide | 4 km à 5m10 | 4 km + rapide | 4 km à 5m10 | 4 km + rapide | en alternance toute d'une shot
+3.3,Semaine du 31 au 6 Avril  - ENDURANCE 57 km,Lundi,journée,off,,,,,,,off
+3.3,Semaine du 31 au 6 Avril  - ENDURANCE 57 km,Mardi,journée,intervalles,,5:00,6,5min,2,tapis,Mardi tapis roulant | 10 min à 5m00 pause 2 min / | 6 x 5 min à 4m20 pause 2m30  entre tes 5 min / | 10 min à 5m00
+3.3,Semaine du 31 au 6 Avril  - ENDURANCE 57 km,Mercredi,journée,autre,20.0,5:35,,,,ext,Mercredi 20 km ext à 5m35 | 146 bpm
+3.3,Semaine du 31 au 6 Avril  - ENDURANCE 57 km,Jeudi,journée,autre,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15 | 151 bpm
+3.3,Semaine du 31 au 6 Avril  - ENDURANCE 57 km,Vendredi,journée,intervalles,,5:00,7,3min,2,tapis,Vendredi tapis roulant | 10 min à 5m00 pause 2 min / | 7 x 3 min à 4m10 pause 1m30 entre tes 3 min / | 10 min à 5m00
+3.3,Semaine du 31 au 6 Avril  - ENDURANCE 57 km,Samedi,journée,off,,,,,,,off
+3.3,Semaine du 31 au 6 Avril  - ENDURANCE 57 km,Dimanche,journée,course,25.0,5:15,,,,ext,Dimanche 25 km ext à 5m15 tes 5 dernier à guerre
+3.4,Semaine du 7 au 13 Avril - ENDURANCE 54 km,Lundi,journée,off,,,,,,,off
+3.4,Semaine du 7 au 13 Avril - ENDURANCE 54 km,Mardi,journée,intervalles,,5:00,5,6min,2,tapis,Mardi tapis roulant | 10 min à 5m00 pause 2 min / | 5 x 6 min à 4m20 pause 3 min entre tes 6 min / | 10 min à 5m00
+3.4,Semaine du 7 au 13 Avril - ENDURANCE 54 km,Mercredi,journée,course,14.0,5:25,,,,ext,Mercredi 14 km ext à 5m25
+3.4,Semaine du 7 au 13 Avril - ENDURANCE 54 km,Jeudi,journée,intervalles,,5:00,9,2min,2,tapis,Jeudi tapis roulant | 10 min à 5m00 pause 2 min / | 9 x 2 min à 4m00 pause 1 min entre tes 2 min / | 10 min à 5m00
+3.4,Semaine du 7 au 13 Avril - ENDURANCE 54 km,Vendredi,journée,autre,16.0,5:30,,,,ext,Vendredi 16 km ext à 5m30 | 141 bpm
+3.4,Semaine du 7 au 13 Avril - ENDURANCE 54 km,Samedi,journée,off,,,,,,,off
+3.4,Semaine du 7 au 13 Avril - ENDURANCE 54 km,Dimanche,journée,tempo,24.0,5:15,,,,ext,Dimanche 24 km ext tempo | 8 km à 5m15 | 8 km à 4m40 | 8 km à 5m15 | en alternance toute d'une shot
+4.1,Semaine du 14 au 20 Avril - ENDURANCE 58 km,Lundi,journée,off,,,,,,,off
+4.1,Semaine du 14 au 20 Avril - ENDURANCE 58 km,Mardi,journée,intervalles,,5:00,3,7min,2,tapis,Mardi tapis roulant | 10 min à 5m00 pause 2 min / | 3 x 7 min à 4m20 pause 3m30  entre tes 7  min / | 9 x 1 min à  3m55 pause 1 min entre tes 1 min / | 10 min à 5m00
+4.1,Semaine du 14 au 20 Avril - ENDURANCE 58 km,Mercredi,journée,autre,18.0,5:35,,,,ext,Mercredi 18 km ext à 5m35 | 141 bpm
+4.1,Semaine du 14 au 20 Avril - ENDURANCE 58 km,Jeudi,journée,autre,14.0,5:25,,,,ext,Jeudi 14 km ext à 5m25 | 142 bpm
+4.1,Semaine du 14 au 20 Avril - ENDURANCE 58 km,Vendredi,journée,intervalles,22.0,5:30,18,1min,2,tapis,20-22 km | 5m30 - 5m35 | (tapis roulant | 10 min à 5m00 pause 2 min / | 18 x 1 min à 3m55 pause 1 min entre tes 1 min / | 10 min à 5m00)
+4.1,Semaine du 14 au 20 Avril - ENDURANCE 58 km,Samedi,journée,off,,,,,,,off
+4.1,Semaine du 14 au 20 Avril - ENDURANCE 58 km,Dimanche,journée,course,26.0,5:15,,,,ext,Dimanche 26 km ext à 5m15
+4.2,Semaine du 21 au 27 Avril - ENDURANCE 58 km,Lundi,journée,off,,,,,,,off
+4.2,Semaine du 21 au 27 Avril - ENDURANCE 58 km,Mardi,journée,autre,24.0,5:35,,,,ext,Mardi 24 km ext à 5m35 | 142 bpm
+4.2,Semaine du 21 au 27 Avril - ENDURANCE 58 km,Mercredi,journée,autre,12.0,5:15,,,,ext,Mercredi 12 km ext à 5m15 | 142 bpm
+4.2,Semaine du 21 au 27 Avril - ENDURANCE 58 km,Jeudi,journée,intervalles,,4:50,7,4min,2,tapis,Jeudi tapis roulant | 10 min à 4m50 pause 2 min / | 7 x 4 min à 4m10 pause 2 min entre tes 4 min / | 10 min à 4m50
+4.2,Semaine du 21 au 27 Avril - ENDURANCE 58 km,Vendredi,journée,autre,14.0,5:20,,,,ext,Vendredi 14 km ext à 5m20 | 145 bpm
+4.2,Semaine du 21 au 27 Avril - ENDURANCE 58 km,Samedi,journée,off,,,,,,,off
+4.2,Semaine du 21 au 27 Avril - ENDURANCE 58 km,Dimanche,journée,tempo,14.0,4:50,,,,ext,Dimanche 14 km tempo | 2 km à 4m50 | 2 km à 4m20 | en alternance toute d'une shot
+4.3,Semaine du 28 au 4 mai - ENDURANCE,Lundi,journée,off,,,,,,,off
+4.3,Semaine du 28 au 4 mai - ENDURANCE,Mardi,journée,intervalles,,4:50,3,5min,2,tapis,Mardi tapis roulant | 10 min à 4m50 pause 2 min / | 3 x 5 min à 4m10 pause 2m30  entre tes 5  min / | 5 x 2 min à 4m00 pause 1 min entre tes 2 min / | 10 min à 4m50
+4.3,Semaine du 28 au 4 mai - ENDURANCE,Mercredi,journée,course,12.0,5:20,,,,ext,Mercredi 12 km ext à 5m20
+4.3,Semaine du 28 au 4 mai - ENDURANCE,Jeudi,journée,intervalles,,4:50,14,1min,2,tapis,Jeudi tapis roulant | 10 min à 4m50 pause 2 min / | 14 x 1 min à 3m55 pause 1 min entre tes 1 min / | 10 min à 4m50
+4.3,Semaine du 28 au 4 mai - ENDURANCE,Vendredi,journée,off,,,,,,,off
+4.3,Semaine du 28 au 4 mai - ENDURANCE,Samedi,journée,off,,,,,,,off
+4.3,Semaine du 28 au 4 mai - ENDURANCE,Dimanche,journée,course_officielle,,,,,,,Dimanche Demi marathon de Lévis
+4.4,Semaine du 5 au 11 Mai,Lundi,journée,off,,,,,,,off
+4.4,Semaine du 5 au 11 Mai,Mardi,journée,course,10.0,5:20,,,,ext,Mardi 10 km ext à 5m20
+4.4,Semaine du 5 au 11 Mai,Mercredi,journée,intervalles,,4:50,3,6min,2,tapis,Mercredi tapis roulant | 10 min à 4m50 pause 2 min / | 3 x 6 min à 4m10 pause 3 min  entre tes 6 min / | 6 x 2 min à 3m50 pause 1 min entre tes 2 min / | 10 min à 4m50
+4.4,Semaine du 5 au 11 Mai,Jeudi,journée,course,18.0,5:30,,,,ext,Jeudi 18 km ext à 5m30
+4.4,Semaine du 5 au 11 Mai,Vendredi,journée,course,14.0,5:25,,,,ext,Vendredi 14 km à 5m25
+4.4,Semaine du 5 au 11 Mai,Samedi,journée,off,,,,,,,off
+4.4,Semaine du 5 au 11 Mai,Dimanche,journée,course,24.0,5:00,,,,ext,Dimanche 24 km ext à 5m00 tes 4 dernier + rapide
+5.1,Semaine du 12 au 18 Mai - 65km,Lundi,journée,off,,,,,,,off
+5.1,Semaine du 12 au 18 Mai - 65km,Mardi,journée,intervalles,,4:45,3,6min,2,tapis,Mardi tapis roulant | 10 min à 4m45 pause 2 min / | 3 x 6 min à 4m10 pause 3 min entre tes 6 min / | 5 x 2 min à 3m55 pause 1 min entre tes 2 min / | 10 min à 4m45
+5.1,Semaine du 12 au 18 Mai - 65km,Mercredi,journée,course,18.0,5:30,,,,ext,Mercredi 18 km ext à 5m30
+5.1,Semaine du 12 au 18 Mai - 65km,Jeudi,journée,course,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15
+5.1,Semaine du 12 au 18 Mai - 65km,Vendredi,journée,intervalles,,4:45,18,1min,2,tapis,Vendredi tapis roulant | 10 min à 4m45 pause 2 min / | 18 x 1 min à 3m50 pause 1 min entre tes 1 min / | 10 min à 4m45
+5.1,Semaine du 12 au 18 Mai - 65km,Samedi,journée,course,10.0,5:10,,,,ext,Samedi 10 km ext à 5m10
+5.1,Semaine du 12 au 18 Mai - 65km,Dimanche,journée,course,25.0,5:00,,,,ext,Dimanche 25 km ext à 5m00 tes 5 dernier + rapide
+5.2,Semaine du 19 au 25 Mai,Lundi,journée,off,,,,,,,off
+5.2,Semaine du 19 au 25 Mai,Mardi,journée,tempo,,4:50,,,,tapis,Mardi tapis roulant 75 min tempo | 10 min à 4m50 | 15 min à 4m20 | 10 min à 4m50 | 15 min à 4m20 | 10 min à 4m50 | 15 min à 4m20 | en alternance toute d'une shot
+5.2,Semaine du 19 au 25 Mai,Mercredi,journée,course,20.0,5:35,,,,ext,Mercredi 20 km ext à 5m35
+5.2,Semaine du 19 au 25 Mai,Jeudi,journée,course,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15
+5.2,Semaine du 19 au 25 Mai,Vendredi,journée,intervalles,,4:45,20,1min,2,tapis,Vendredi tapis roulant | 10 min à 4m45 pause 2 min / | 20 x 1 min à 3m50 pause 1 min entre tes 1 min / | 10 min à 4m45
+5.2,Semaine du 19 au 25 Mai,Samedi,journée,course,10.0,5:10,,,,ext,Samedi 10 km ext à 5m10
+5.2,Semaine du 19 au 25 Mai,Dimanche,journée,course,26.0,5:00,,,,ext,Dimanche 26 km ext à 5m00 tes 6 dernier + rapide
+5.3,Semaine du 26 au 1er juin,Lundi,journée,off,,,,,,,off
+5.3,Semaine du 26 au 1er juin,Mardi,journée,intervalles,,4:45,3,7min,2,tapis,Mardi tapis roulant | 10 min à 4m45 pause 2 min / | 3 x 7 min à 4m10 pause 3m30 entre tes 7 min / | 3 x 3 min à 4m00 pause 1 m30 entre tes 3 min / | 10 min à 4m45
+5.3,Semaine du 26 au 1er juin,Mercredi,journée,course,22.0,5:35,,,,ext,Mercredi 22 km ext à 5m35
+5.3,Semaine du 26 au 1er juin,Jeudi,journée,course,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15
+5.3,Semaine du 26 au 1er juin,Vendredi,journée,intervalles,,4:45,10,2min,2,tapis,Vendredi tapis roulant | 10 min à 4m45 pause 2 min / | 10 x 2 min à 3m45 pause 1 min entre tes 2 min / | 10 min à 4m45
+5.3,Semaine du 26 au 1er juin,Samedi,journée,course,10.0,5:10,,,,ext,Samedi 10 km ext à 5m10
+5.3,Semaine du 26 au 1er juin,Dimanche,journée,course,28.0,5:00,,,,ext,Dimanche 28 km ext à 5m00 tes 5 dernier + rapide
+5.4,Semaine du 2 au 8 Juin,Lundi,journée,off,,,,,,,off
+5.4,Semaine du 2 au 8 Juin,Mardi,journée,tempo,,4:50,,,,tapis,Mardi tapis roulant 90 min tempo | 15 min à 4m50 | 15 min à 4m20 | 15 min à 4m50 | 15 min à 4m20 | 15 min à 4m50 | 15 min à 4m20 | en alternance toute d'une shot
+5.4,Semaine du 2 au 8 Juin,Mercredi,journée,course,22.0,5:35,,,,ext,Mercredi 22 km ext à 5m35
+5.4,Semaine du 2 au 8 Juin,Jeudi,journée,course,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15
+5.4,Semaine du 2 au 8 Juin,Vendredi,journée,intervalles,,4:40,20,1min,2,tapis,Vendredi tapis roulant | 10 min à 4m40 pause 2 min / | 20 x 1 min à 3m40 pause 1 min entre tes 1 min / | 10 min à 4m40
+5.4,Semaine du 2 au 8 Juin,Samedi,journée,course,10.0,5:10,,,,ext,Samedi 10 km ext à 5m10
+5.4,Semaine du 2 au 8 Juin,Dimanche,journée,autre,24.0,5:00,,,,ext,Dimanche 24 km ext à 5m00 tes 5 dernier + rapide | (ou 8 dernier à 4:15)
+6.1,Semaine du 9 au 15 Juin,Lundi,journée,off,,,,,,,off
+6.1,Semaine du 9 au 15 Juin,Mardi,journée,autre,2.0,4:40,,,2,ext,2 km ext à 4m40 pause 2 min / | test 5 km / | retour 7 km à 5m00
+6.1,Semaine du 9 au 15 Juin,Mercredi,journée,course,20.0,5:30,,,,ext,Mercredi 20 km ext à 5m30
+6.1,Semaine du 9 au 15 Juin,Jeudi,journée,course,14.0,5:20,,,,ext,Jeudi 14 km ext à 5m20
+6.1,Semaine du 9 au 15 Juin,Vendredi,journée,intervalles,,4:40,7,3min,2,tapis,Vendredi tapis roulant | 10 min à 4m40 pause 2 min / | 7 x 3 min à 3m45 pause 1m30 entre tes 3 min / | 10 min à 4m40
+6.1,Semaine du 9 au 15 Juin,Samedi,journée,course,12.0,5:10,,,,ext,Samedi 12 km ext à 5m10
+6.1,Semaine du 9 au 15 Juin,Dimanche,journée,course,28.0,5:00,,,,ext,Dimanche 28 km ext à 5m00 tes 5 dernier + rapide
+6.2,Semaine du 16 au 22 Juin,Lundi,journée,off,,,,,,,off
+6.2,Semaine du 16 au 22 Juin,Mardi,journée,intervalles,2.0,4:40,6,5min,2,ext,2 km ext à 4m40 pause 2 min / | 6 x 5 min à 3m55 pause 2m30 entre tes 5 min / | 10 min à 4m40
+6.2,Semaine du 16 au 22 Juin,Mercredi,journée,course,16.0,5:25,,,,ext,Mercredi 16 km ext à 5m25
+6.2,Semaine du 16 au 22 Juin,Jeudi,journée,course,14.0,5:20,,,,ext,Jeudi 14 km ext à 5m20
+6.2,Semaine du 16 au 22 Juin,Vendredi,journée,tempo,14.0,4:40,,,,ext,Vendredi 14 km tempo ext | 2 km à 4m40 | 2 km ++ rapide donne toi | 2 km à 4m40 | 2 km ++ rapide donne toi | 2 km à 4m40 | 2 km ++ rapide donne toi | 2 km à 4m40 | en alternance toute d'une shot
+6.2,Semaine du 16 au 22 Juin,Samedi,journée,course,10.0,5:00,,,,ext,Samedi 10 km ext à 5m00
+6.2,Semaine du 16 au 22 Juin,Dimanche,journée,autre,34.0,5:15,,,,ext,Dimanche 34 km ext à 5m15 tes 4 dernier + rapide | si tu veux venir avec nous c'est la course à 4h30 am a la Rocky balboa on n'a tripper l'année passer
+6.3,Semaine du 23 au 29 Juin,Lundi,journée,off,,,,,,,off
+6.3,Semaine du 23 au 29 Juin,Mardi,journée,intervalles,2.0,4:40,2,2000m,2,ext,2 km ext à 4m40 pause 2 min / | 2 x 2000m à 4m00 pause 3 min entre tes 2000m / | 6 x 400m à 3m30 pause 1m25 entre tes 400m/ | 2 km à 4m40
+6.3,Semaine du 23 au 29 Juin,Mercredi,journée,course,18.0,5:25,,,,ext,Mercredi 18 km ext à 5m25
+6.3,Semaine du 23 au 29 Juin,Jeudi,journée,course,12.0,5:10,,,,ext,Jeudi 12 km ext à 5m10
+6.3,Semaine du 23 au 29 Juin,Vendredi,journée,tempo,15.0,4:40,,,,ext,Vendredi 15 km tempo ext | 2 km à 4m40 | 3 km + rapide | 2 km à 4m40 | 3 km + rapide | 2 km à 4m40 | 3 km + rapide | en alternance toute d'une shot
+6.3,Semaine du 23 au 29 Juin,Samedi,journée,course,12.0,5:10,,,,ext,Samedi 12 km ext à 5m10
+6.3,Semaine du 23 au 29 Juin,Dimanche,journée,course,25.0,5:10,,,,ext,Dimanche 25 km ext à 5m10 tes 5 dernier + rapide
+6.4,Semaine du 30 au 6 Juillet,Lundi,journée,off,,,,,,,off
+6.4,Semaine du 30 au 6 Juillet,Mardi,matin,intervalles,,4:40,8,4min,2,tapis,Mardi matin tapis tapis roulant | 10 min à 4m40 pause 2 min / | 8 x 4 min à 3m45 pause 2 min entre tes 4 min/ | 10 min à 4m40
+6.4,Semaine du 30 au 6 Juillet,Mardi,soir,course,8.0,5:20,,,,ext,Mardi soir 8 km ext à 5m20
+6.4,Semaine du 30 au 6 Juillet,Mercredi,journée,course,22.0,5:30,,,,ext,Mercredi 22 km ext à 5m30
+6.4,Semaine du 30 au 6 Juillet,Jeudi,journée,course,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15
+6.4,Semaine du 30 au 6 Juillet,Vendredi,journée,tempo,,4:40,,,,tapis,Vendredi tapis roulant 70 min en décroissant toute d'une shot | 10 min à 4m40 | 10 min à 4m10 | 10 min à 4m05 | 10 min à 4m00 | 10 min à 3m55 | 10 min à 3m50 | 10 min à 4m40  toute d'une shot
+6.4,Semaine du 30 au 6 Juillet,Vendredi,soir,course,8.0,5:20,,,,ext,Vendredi soir 8 km ext à 5m20
+6.4,Semaine du 30 au 6 Juillet,Samedi,journée,course,10.0,5:10,,,,ext,Samedi 10 km ext à 5m10
+6.4,Semaine du 30 au 6 Juillet,Dimanche,journée,course,30.0,5:10,,,,ext,Dimanche 30 km ext à 5m10 les 5 dernier km + rapide
+7.1,Semaine du 7 au 13 Juillet,Lundi,journée,off,,,,,,,off
+7.1,Semaine du 7 au 13 Juillet,Mardi,matin,intervalles,,4:40,6,5min,2,tapis,tapis tapis roulant | 10 min à 4m40 pause 2 min / | 6 x 5 min à 3m45 ou moins  pause 2m30 entre tes 5 min/ | 10 min à 4m40
+7.1,Semaine du 7 au 13 Juillet,Mardi,soir,course,8.0,5:20,,,,ext,Mardi soir 8 km ext à 5m20
+7.1,Semaine du 7 au 13 Juillet,Mercredi,journée,course,20.0,5:30,,,,ext,Mercredi 20 km ext à 5m30
+7.1,Semaine du 7 au 13 Juillet,Jeudi,journée,course,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15
+7.1,Semaine du 7 au 13 Juillet,Vendredi,journée,intervalles,,4:40,22,1min,2,tapis,tapis roulant | 10 min à 4m40 pause 2 min / | 22 x 1 min à 3m30 ou moins  pause 1 min entre tes 1 min / | 10 min à 4m40
+7.1,Semaine du 7 au 13 Juillet,Vendredi,soir,course,8.0,5:20,,,,ext,Vendredi soir 8 km ext à 5m20
+7.1,Semaine du 7 au 13 Juillet,Samedi,journée,course,12.0,5:10,,,,ext,Samedi 12 km ext à 5m10
+7.1,Semaine du 7 au 13 Juillet,Dimanche,journée,course,25.0,5:10,,,,ext,Dimanche 25 km ext à 5m10 les 5 dernier km + rapide
+7.2,Semaine du 14 au 20 Juillet,Lundi,journée,off,,,,,,,off
+7.2,Semaine du 14 au 20 Juillet,Mardi,matin,intervalles,,4:40,3,10min,2,tapis,tapis roulant 10 min à 4m40 pause 2 min / | 3 x 10 min à 3m40 à 3m45 pause 5 min entre tes 10 min / | 10 min à 4m40
+7.2,Semaine du 14 au 20 Juillet,Mardi,soir,course,10.0,5:15,,,,ext,Mardi soir 10 km ext à 5m15 pas + vite + égaux
+7.2,Semaine du 14 au 20 Juillet,Mercredi,journée,course,18.0,5:25,,,,ext,Mercredi 18 km ext à 5m25 pas + vite le + égaux
+7.2,Semaine du 14 au 20 Juillet,Jeudi,journée,course,14.0,5:20,,,,ext,Jeudi 14 km ext à 5m20 pas + vite le + égaux
+7.2,Semaine du 14 au 20 Juillet,Vendredi,journée,intervalles,3.0,4:40,14,400m,2,ext,3 km ext à 4m40 pause 2 min / | 14 x 400m en contrôle à 3m25 pas + vite pause 1m25 entre tes 400m / | 3 km à 4m40
+7.2,Semaine du 14 au 20 Juillet,Samedi,journée,course_officielle,,,,,,,Samedi course à la Rocky chez nous pour 4@m avec Martin
+7.2,Semaine du 14 au 20 Juillet,Dimanche,journée,course,16.0,5:25,,,,ext,Dimanche 16 km ext à 5m25
+7.3,Semaine du 21 au 27 Juillet,Lundi,journée,off,,,,,,,off
+7.3,Semaine du 21 au 27 Juillet,Mardi,matin,intervalles,2.0,4:40,3,3000m,4,ext,2 km ext à 4m40 / | 3 x 3000m à 3m50 pause 4 min entre tes 3000m / | 2 km à 4m40
+7.3,Semaine du 21 au 27 Juillet,Mardi,soir,course,10.0,5:15,,,,ext,Mardi soir 10 km ext à 5m15
+7.3,Semaine du 21 au 27 Juillet,Mercredi,journée,course,22.0,5:30,,,,ext,Mercredi 22 km ext à 5m30
+7.3,Semaine du 21 au 27 Juillet,Jeudi,journée,course,12.0,5:10,,,,ext,Jeudi 12 km ext à 5m10
+7.3,Semaine du 21 au 27 Juillet,Vendredi,journée,intervalles,2.0,4:40,10,600m,2,ext,2 km ext à 4m40 pause 2 min / | 10 x 600m à 3m35  pause 1m40 entre tes 600m / | 2 km à 4m40
+7.3,Semaine du 21 au 27 Juillet,Vendredi,soir,course,10.0,5:15,,,,ext,Vendredi soir 10 km ext à 5m15
+7.3,Semaine du 21 au 27 Juillet,Samedi,journée,course,10.0,5:00,,,,ext,Samedi 10 km ext à 5m00
+7.3,Semaine du 21 au 27 Juillet,Dimanche,journée,course,25.0,5:00,,,,ext,Dimanche 25 km ext à 5m00 tes 5 dernier défonce moi ça
+7.4,Semaine du 28 au 3 Août,Lundi,journée,off,,,,,,,off
+7.4,Semaine du 28 au 3 Août,Mardi,matin,intervalles,2.0,4:40,2,4000m,5,ext,2 km ext à 4m40 / | 2 x 4000m à 3m50 pause 5 min entre tes 4000m / | 2 km à 4m40
+7.4,Semaine du 28 au 3 Août,Mardi,soir,course,10.0,5:15,,,,ext,Mardi soir 10 km ext à 5m15
+7.4,Semaine du 28 au 3 Août,Mercredi,journée,course,24.0,5:30,,,,ext,Mercredi 24 km ext à 5m30
+7.4,Semaine du 28 au 3 Août,Jeudi,journée,course,14.0,5:15,,,,ext,Jeudi 14 km ext à 5m15
+7.4,Semaine du 28 au 3 Août,Vendredi,journée,intervalles,2.0,4:40,14,400m,2,ext,2 km ext à 4m40 pause 2 min / | 14 x 400m à 3m25  pause 1m25 entre tes 400m / | 2 km à 4m40
+7.4,Semaine du 28 au 3 Août,Vendredi,soir,course,10.0,5:15,,,,ext,Vendredi soir 10 km ext à 5m15
+7.4,Semaine du 28 au 3 Août,Samedi,journée,course,12.0,5:00,,,,ext,Samedi 12 km ext à 5m00
+7.4,Semaine du 28 au 3 Août,Dimanche,journée,course,34.0,5:10,,,,ext,Dimanche 34 km ext à 5m10 tes 5 dernier défonce ça
+8.1,Semaine du 4 au 10 Août,Lundi,journée,course,14.0,5:20,,,,ext,Lundi 14 km ext à 5m20
+8.1,Semaine du 4 au 10 Août,Mardi,journée,course,12.0,5:15,,,,ext,Mardi 12 km ext à 5m15
+8.1,Semaine du 4 au 10 Août,Mercredi,journée,intervalles,2.0,4:40,1,2000m,2,ext,2 km ext à 4m40 pause 2 min / | 1 x 2000m à 3m45 pause 3 min entre ton 2000m / | 1 x 1000m à 3m40 pause 2 min entre ton 1000m  / | 4 x 500m à 3m30 pause 1m30 entre tes 500m / | 2 km à 4m40
+8.1,Semaine du 4 au 10 Août,Jeudi,journée,course,12.0,5:10,,,,ext,Jeudi 12 km ext à 5m10
+8.1,Semaine du 4 au 10 Août,Vendredi,journée,off,,,,,,,off
+8.1,Semaine du 4 au 10 Août,Samedi,journée,off,,,,,,,off
+8.1,Semaine du 4 au 10 Août,Dimanche,matin,course_officielle,,,,,,,Demi Marathon de Tremblant
+8.1,Semaine du 4 au 10 Août,Dimanche,soir,course,15.0,5:30,,,,ext,Dimanche soir 15 km ext à 5m30
+8.2,Semaine du 11 au 17 Août,Lundi,journée,off,,,,,,,off
+8.2,Semaine du 11 au 17 Août,Mardi,matin,intervalles,2.0,4:40,8,1000m,2,ext,2 km ext à 4m40 pause 2 min  / | 8 x 1000m à 3m40 pause 2 min entre tes 1000m / | 2 km à 4m40
+8.2,Semaine du 11 au 17 Août,Mardi,soir,course,10.0,5:15,,,,ext,Mardi soir 10 km ext à 5m15
+8.2,Semaine du 11 au 17 Août,Mercredi,journée,course,22.0,5:30,,,,ext,Mercredi 22 km ext à 5m30
+8.2,Semaine du 11 au 17 Août,Jeudi,journée,course,12.0,5:10,,,,ext,Jeudi 12 km ext à 5m10
+8.2,Semaine du 11 au 17 Août,Vendredi,journée,intervalles,2.0,4:40,10,500m,2,ext,2 km ext à 4m40 pause 2 min / | 10 x 500m à 3m30 pause 1m30 entre tes 500m / | 2 km à 4m40
+8.2,Semaine du 11 au 17 Août,Samedi,journée,autre,,,,,,,Samedi long run chez moi pour le party de équipe
+8.2,Semaine du 11 au 17 Août,Dimanche,journée,course,14.0,5:20,,,,ext,Dimanche 14 km ext à 5m20
+8.3,Semaine du 18 au 24 Août,Lundi,journée,off,,,,,,,off
+8.3,Semaine du 18 au 24 Août,Mardi,matin,intervalles,2.0,4:40,4,2000m,2,ext,2 km ext à 4m40 pause 2 min  / | 4 x 2000m à 3m45 pause 3 min entre tes 2000m / | 2 km à 4m40
+8.3,Semaine du 18 au 24 Août,Mardi,soir,course,12.0,5:15,,,,ext,Mardi soir 12 km ext à 5m15
+8.3,Semaine du 18 au 24 Août,Mercredi,journée,course,20.0,5:30,,,,ext,Mercredi 20 km ext à 5m30
+8.3,Semaine du 18 au 24 Août,Jeudi,journée,course,12.0,5:15,,,,ext,Jeudi 12 km ext à 5m15
+8.3,Semaine du 18 au 24 Août,Vendredi,matin,tempo,16.0,4:40,,,,ext,16 km tempo | 2 km à 4m40 | 2 km + rapide en alternance toute d'une shot
+8.3,Semaine du 18 au 24 Août,Vendredi,soir,course,12.0,5:15,,,,ext,Vendredi soir 12 km ext à 5m15
+8.3,Semaine du 18 au 24 Août,Samedi,journée,course,12.0,5:15,,,,ext,Samedi 12 km ext à 5m15
+8.3,Semaine du 18 au 24 Août,Dimanche,journée,course,35.0,5:00,,,,ext,Dimanche 35 km ext à 5m00 tes 5 dernier km + rapide
+8.4,Semaine du 25 au 31 Août,Lundi,journée,off,,,,,,,off
+8.4,Semaine du 25 au 31 Août,Mardi,matin,intervalles,2.0,4:40,1,3000m,2,ext,2 km ext à 4m40 pause 2 min  / | 1 x 3000m à 3m55 pause 4 min entre ton 3000m / | 10 x 300m à 3m25 pause 1m15 entre tes 300m  / | 2 km à 4m40
+8.4,Semaine du 25 au 31 Août,Mardi,soir,course,10.0,5:10,,,,ext,Mardi soir 10 km ext à 5m10
+8.4,Semaine du 25 au 31 Août,Mercredi,journée,course,20.0,5:30,,,,ext,Mercredi 20 km ext à 5m30
+8.4,Semaine du 25 au 31 Août,Jeudi,journée,course,14.0,5:20,,,,ext,Jeudi 14 km ext à 5m20
+8.4,Semaine du 25 au 31 Août,Vendredi,matin,intervalles,2.0,4:40,16,250m,2,ext,2 km ext à  4m40 pause 2 min / | 16 x 250m à 3m20 pause 50 sec entre tes 250m / | 2 km à 4m40
+8.4,Semaine du 25 au 31 Août,Vendredi,soir,course,10.0,5:10,,,,ext,Vendredi soir 10 km ext à 5m10
+8.4,Semaine du 25 au 31 Août,Samedi,journée,course,12.0,5:15,,,,ext,Samedi 12 km ext à 5m15
+8.4,Semaine du 25 au 31 Août,Dimanche,journée,autre,25.0,5:00,,,,ext,Dimanche 25 km ext à 5m00 | tes 5 dernier km + rapide
+9.1,Semaine du 1er au 7 sept,Lundi,journée,off,,,,,,,off
+9.1,Semaine du 1er au 7 sept,Mardi,matin,intervalles,2.0,4:40,1,4000m,2,ext,2 km ext à 4m40 pause 2 min  / | 1 x 4000m à 3m55 pause 5 min entre ton 4000m / | 8 x 300m à 3m25 pause 1m15 entre tes 300m / | 2 km à 4m40
+9.1,Semaine du 1er au 7 sept,Mardi,soir,course,10.0,5:15,,,,ext,10 km ext à 5m15
+9.1,Semaine du 1er au 7 sept,Mercredi,journée,course,22.0,5:40,,,,ext,22 km ext à 5m40
+9.1,Semaine du 1er au 7 sept,Jeudi,journée,course,12.0,5:10,,,,ext,12 km ext à 5m10
+9.1,Semaine du 1er au 7 sept,Vendredi,matin,tempo,15.0,4:40,,,,ext,15 km ext  tempo en alternance toute d'une shot | 2 km à 4m40 | 3 km à 4m00 | 2 km à 4m40 | 3 km à 4m00 | 2 km à 4m40 | 3 km à 4m00
+9.1,Semaine du 1er au 7 sept,Vendredi,soir,course,10.0,5:15,,,,ext,10 km ext à 5m15
+9.1,Semaine du 1er au 7 sept,Samedi,journée,course,15.0,5:25,,,,ext,15 km ext à  5m25
+9.1,Semaine du 1er au 7 sept,Dimanche,journée,course,35.0,5:00,,,,ext,35 km ext à 5m00 tes 5 dernier km + rapide
+9.2,Semaine du 8 au 14 sept,Lundi,journée,off,,,,,,,off
+9.2,Semaine du 8 au 14 sept,Mardi,matin,intervalles,2.0,4:40,8,1000m,2,ext,2 km ext à 4m40 pause 2 min / | 8 x 1000m à 3m55 en contrôle pas + vite  pause 2 min entre tes 1000m / | 2 km à 4m40
+9.2,Semaine du 8 au 14 sept,Mardi,soir,course,12.0,5:15,,,,ext,Mardi soir 12 km ext à 5m15
+9.2,Semaine du 8 au 14 sept,Mercredi,journée,course,22.0,5:40,,,,ext,Mercredi 22 km ext à 5m40
+9.2,Semaine du 8 au 14 sept,Jeudi,journée,course,14.0,5:25,,,,ext,Jeudi 14 km ext à 5m25
+9.2,Semaine du 8 au 14 sept,Vendredi,journée,intervalles,2.0,4:40,16,300m,2,ext,2 km ext à 4m40 pause 2 min / | 16 x 300m à 3m25 pas + vite pause 1m15 entre tes 300m / | 2 km à 4m40
+9.2,Semaine du 8 au 14 sept,Vendredi,soir,course,12.0,5:15,,,,ext,Vendredi soir 12 km ext à 5m15
+9.2,Semaine du 8 au 14 sept,Samedi,journée,course,12.0,5:15,,,,ext,Samedi 12 km ext à 5m15
+9.2,Semaine du 8 au 14 sept,Dimanche,journée,intervalles,30.0,4:40,,,,ext,Dimanche 30 km ext tempo | 5 km à 4m40 | 3 km à 4m05 pas + vite | 2 km à 4m40  x 4 en alternance toute d'une shot | 5 km à 5m00
+9.3,Semaine du 15 au 21 sept,Lundi,journée,off,,,,,,,off
+9.3,Semaine du 15 au 21 sept,Mardi,matin,intervalles,2.0,4:40,6,1200m,2,ext,2 km ext à 4m40 pause 2 min / | 6 x 1200m à 3m55 en contrôle pas + vite  pause 2m20 entre tes 1200m / | 2 km à 4m40
+9.3,Semaine du 15 au 21 sept,Mardi,soir,course,10.0,5:20,,,,ext,Mardi soir 10 km ext à 5m20
+9.3,Semaine du 15 au 21 sept,Mercredi,journée,course,20.0,5:40,,,,ext,Mercredi 20 km ext à 5m40
+9.3,Semaine du 15 au 21 sept,Jeudi,journée,course,14.0,5:25,,,,ext,Jeudi 14 km ext à 5m25
+9.3,Semaine du 15 au 21 sept,Vendredi,journée,intervalles,2.0,4:40,8,600m,2,ext,2 km ext à 4m40 pause 2 min / | 8 x 600m à 3m40 pause 1m40 entre tes 600m pas + vite  / | 2 km à 4m40
+9.3,Semaine du 15 au 21 sept,Vendredi,soir,course,10.0,5:20,,,,ext,Vendredi soir 10 km ext à 5m20
+9.3,Semaine du 15 au 21 sept,Samedi,journée,course,13.0,5:15,,,,ext,Samedi 13 km ext à 5m15
+9.3,Semaine du 15 au 21 sept,Dimanche,journée,course,37.0,5:10,,,,ext,Dimanche 37 km ext à 5m10 tes 5 dernier à 4m05 pas + vite
+9.4,Semaine du 22 au 28 sept,Lundi,journée,off,,,,,,,off
+9.4,Semaine du 22 au 28 sept,Mardi,matin,intervalles,2.0,4:40,4,1500m,2,ext,2 km ext à 4m40 pause 2 min / | 4 x 1500m à 3m55 en contrôle pas + vite  pause 2m30 entre tes 1500m / | 4 x 500m à 3m35 pause 1m30 entre tes 500m / | 2 km à 4m40
+9.4,Semaine du 22 au 28 sept,Mardi,soir,course,10.0,5:20,,,,ext,Mardi soir 10 km ext à 5m20
+9.4,Semaine du 22 au 28 sept,Mercredi,journée,course,22.0,5:40,,,,ext,Mercredi 22 km ext à 5m40
+9.4,Semaine du 22 au 28 sept,Jeudi,journée,course,14.0,5:25,,,,ext,Jeudi 14 km ext à 5m25
+9.4,Semaine du 22 au 28 sept,Vendredi,journée,intervalles,2.0,4:40,10,500m,2,ext,2 km ext à 4m40 pause 2 min / | 10 x 500m à 3m35 pause 1m30 entre tes 500m pas + vite  / | 2 km à 4m40
+9.4,Semaine du 22 au 28 sept,Vendredi,soir,course,10.0,5:20,,,,ext,Vendredi soir 10 km ext à 5m20
+9.4,Semaine du 22 au 28 sept,Samedi,journée,off,,,,,,,off
+9.4,Semaine du 22 au 28 sept,Dimanche,journée,tempo,30.0,5:00,,,,ext,Dimanche 30 km ext tempo | 10 km à 5m00 | 10 km pace marathon 4:02-4:05 si possible. (commencer à 4:05 et voir si on le tient sur les 10 km) | 10 km à 5m00

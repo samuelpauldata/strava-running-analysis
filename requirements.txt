@@ -7,3 +7,4 @@ folium
 streamlit-folium
 plotly
 python-dotenv
+groq

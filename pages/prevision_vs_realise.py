@@ -90,7 +90,7 @@ for _, row in df_marathons.iterrows():
     ecart = temps_predit_min - temps_reel_min
 
     resultats.append({
-        'Marathon': row['name'],
+        'Marathon': 'Buffalo Marathon' if row['start_date_local'].strftime('%Y-%m-%d') == '2026-05-24' else row['name'],
         'Date': row['start_date_local'].strftime('%Y-%m-%d'),
         'Annee': row['annee'],
         'Temps reel': secondes_to_str(row['moving_time']),
@@ -214,7 +214,7 @@ st.markdown(f'''
 Le modele Random Forest est entraine sur **700+ sorties d entrainement**. En lui fournissant
 la **vraie frequence cardiaque** de chaque course, on obtient une comparaison plus juste.
 
-**Amelioration totale : -{min_to_str(amelioration_totale)}** entre {df_res.iloc[0]['Marathon']} et {df_res.iloc[-1]['Marathon']}.
+**Amelioration totale : +{min_to_str(abs(amelioration_totale))}** entre {df_res.iloc[0]['Marathon']} et {df_res.iloc[-1]['Marathon']}.
 
 Les marathons futurs seront **detectes automatiquement** dans les donnees Strava
 si la distance depasse 40 km et la FC moyenne depasse 155 bpm.

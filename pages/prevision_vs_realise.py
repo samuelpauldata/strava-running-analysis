@@ -2,13 +2,12 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
-import plotly.express as px
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
 st.set_page_config(page_title='Prevision vs Realise', layout='wide')
 st.title('Prevision ML vs Performances reelles')
-st.markdown('Comparaison entre les predictions du modele Random Forest et mes 3 marathons officiels')
+st.markdown('Comparaison entre les predictions du modele Random Forest et mes marathons officiels')
 
 @st.cache_data
 def charger_donnees():
@@ -36,42 +35,26 @@ def entrainer_modele(df):
 df = charger_donnees()
 modele = entrainer_modele(df)
 
-# Donnees reelles des 3 marathons depuis Strava
-marathons = [
-    {
-        'nom': 'Beneva de Quebec',
-        'date': '2024-10-06',
-        'annee': 2024,
-        'mois': 10,
-        'jour_semaine': 6,
-        'distance_km': 42.6483,
-        'moving_time': 13116,
-        'fc': 149.8,
-        'denivele': 80,
-    },
-    {
-        'nom': 'Toronto',
-        'date': '2025-10-19',
-        'annee': 2025,
-        'mois': 10,
-        'jour_semaine': 6,
-        'distance_km': 42.7792,
-        'moving_time': 10842,
-        'fc': 166.6,
-        'denivele': 80,
-    },
-    {
-        'nom': 'Buffalo',
-        'date': '2026-05-24',
-        'annee': 2026,
-        'mois': 5,
-        'jour_semaine': 6,
-        'distance_km': 42.6245,
-        'moving_time': 10419,
-        'fc': 167.9,
-        'denivele': 50,
-    },
-]
+# Detection automatique des marathons officiels
+# Criteres : distance > 40 km + FC > 155 bpm (effort de competition)
+@st.cache_data
+def detecter_marathons(df):
+    # Marathons detectes automatiquement
+    df_auto = df[
+        (df['distance_km'] > 40) &
+        (df['average_heartrate'] > 155)
+    ].copy()
+
+    # Beneva 2024 - exception hardcodee (premier marathon, FC conservative 149.8)
+    beneva = df[df['start_date_local'].dt.strftime('%Y-%m-%d') == '2024-10-06'].copy()
+    beneva = beneva[beneva['distance_km'] > 40]
+
+    # Combiner et dedupliquer
+    df_marathons = pd.concat([beneva, df_auto]).drop_duplicates(subset='start_date_local')
+    df_marathons = df_marathons.sort_values('start_date_local').reset_index(drop=True)
+    return df_marathons
+
+df_marathons = detecter_marathons(df)
 
 def secondes_to_str(s):
     h = int(s // 3600)
@@ -87,31 +70,34 @@ def min_to_str(m):
         return f"{h}h{mins:02d}:{secs:02d}"
     return f"{mins}:{secs:02d}"
 
+# Calcul predictions ML pour chaque marathon
 resultats = []
-for m in marathons:
-    temps_reel_min = m['moving_time'] / 60
-    allure_reelle = temps_reel_min / m['distance_km']
+for _, row in df_marathons.iterrows():
+    temps_reel_min = row['moving_time'] / 60
+    allure_reelle = row['allure_min_km']
+    denivele = row['total_elevation_gain'] if pd.notna(row.get('total_elevation_gain')) else 50
 
     X_pred = pd.DataFrame([{
-        'distance_km': m['distance_km'],
-        'average_heartrate': m['fc'],
-        'total_elevation_gain': m['denivele'],
-        'annee': m['annee'],
-        'mois': m['mois'],
-        'jour_semaine': m['jour_semaine']
+        'distance_km': row['distance_km'],
+        'average_heartrate': row['average_heartrate'],
+        'total_elevation_gain': denivele,
+        'annee': row['annee'],
+        'mois': row['mois'],
+        'jour_semaine': row['jour_semaine']
     }])
     allure_predite = modele.predict(X_pred)[0]
-    temps_predit_min = allure_predite * m['distance_km']
+    temps_predit_min = allure_predite * row['distance_km']
     ecart = temps_predit_min - temps_reel_min
 
     resultats.append({
-        'Marathon': m['nom'],
-        'Date': m['date'],
-        'Temps reel': secondes_to_str(m['moving_time']),
+        'Marathon': row['name'],
+        'Date': row['start_date_local'].strftime('%Y-%m-%d'),
+        'Annee': row['annee'],
+        'Temps reel': secondes_to_str(row['moving_time']),
         'Temps predit': min_to_str(temps_predit_min),
         'Allure reelle': f"{int(allure_reelle)}:{int((allure_reelle%1)*60):02d} min/km",
         'Allure predite': f"{int(allure_predite)}:{int((allure_predite%1)*60):02d} min/km",
-        'FC reelle': f"{m['fc']:.0f} bpm",
+        'FC reelle': f"{row['average_heartrate']:.0f} bpm",
         'Ecart (min)': round(ecart, 1),
         'temps_reel_min': temps_reel_min,
         'temps_predit_min': temps_predit_min,
@@ -120,27 +106,31 @@ for m in marathons:
 df_res = pd.DataFrame(resultats)
 
 # ---- PROGRESSION ----
-st.header('Progression sur 3 marathons')
-col1, col2, col3 = st.columns(3)
-amelioration_total = marathons[0]['moving_time'] - marathons[2]['moving_time']
-amelioration_toronto = marathons[0]['moving_time'] - marathons[1]['moving_time']
-amelioration_buffalo = marathons[1]['moving_time'] - marathons[2]['moving_time']
+st.header(f'Progression sur {len(df_res)} marathons')
 
-col1.metric('Beneva de Quebec 2024', secondes_to_str(marathons[0]['moving_time']))
-col2.metric('Toronto 2025', secondes_to_str(marathons[1]['moving_time']),
-            f"-{secondes_to_str(amelioration_toronto)} vs Beneva")
-col3.metric('Buffalo 2026', secondes_to_str(marathons[2]['moving_time']),
-            f"-{secondes_to_str(amelioration_buffalo)} vs Toronto")
+cols = st.columns(len(df_res))
+for i, (_, row) in enumerate(df_res.iterrows()):
+    if i == 0:
+        cols[i].metric(f"{row['Marathon']} ({row['Annee']})", row['Temps reel'])
+    else:
+        prev_time = df_res.iloc[i-1]['temps_reel_min']
+        amelioration = prev_time - row['temps_reel_min']
+        signe = '-' if amelioration > 0 else '+'
+        cols[i].metric(
+            f"{row['Marathon']} ({row['Annee']})",
+            row['Temps reel'],
+            f"{signe}{min_to_str(abs(amelioration))} vs precedent"
+        )
 
 st.markdown('---')
 
 # Graphique progression
 fig_prog = go.Figure()
 fig_prog.add_trace(go.Scatter(
-    x=[m['nom'] for m in marathons],
-    y=[m['moving_time'] / 60 for m in marathons],
+    x=df_res['Marathon'] + ' ' + df_res['Annee'].astype(str),
+    y=df_res['temps_reel_min'],
     mode='lines+markers+text',
-    text=[secondes_to_str(m['moving_time']) for m in marathons],
+    text=df_res['Temps reel'],
     textposition='top center',
     line=dict(color='#FC4C02', width=3),
     marker=dict(size=12, color='#FC4C02'),
@@ -159,7 +149,7 @@ st.markdown('---')
 
 # ---- COMPARAISON ML ----
 st.header('Prediction ML vs Temps reel')
-st.markdown('Le modele est alimenté avec la **vraie FC de chaque course** pour une comparaison juste.')
+st.markdown('Le modele est alimente avec la **vraie FC de chaque course** pour une comparaison juste.')
 
 fig_comp = go.Figure()
 fig_comp.add_trace(go.Bar(
@@ -218,17 +208,16 @@ st.dataframe(
 st.markdown('---')
 
 # Interpretation
+amelioration_totale = df_res.iloc[0]['temps_reel_min'] - df_res.iloc[-1]['temps_reel_min']
 st.header('Interpretation')
 st.markdown(f'''
 Le modele Random Forest est entraine sur **700+ sorties d entrainement**. En lui fournissant
 la **vraie frequence cardiaque** de chaque course, on obtient une comparaison plus juste.
 
-**Ce que les ecarts revelent :**
-- **Beneva 2024** : premier marathon, le modele etait {'pessimiste' if df_res.iloc[0]['Ecart (min)'] > 0 else 'optimiste'} de {abs(df_res.iloc[0]['Ecart (min)']):.1f} min
-- **Toronto 2025** : avec une FC de 166 bpm, le modele etait {'pessimiste' if df_res.iloc[1]['Ecart (min)'] > 0 else 'optimiste'} de {abs(df_res.iloc[1]['Ecart (min)']):.1f} min  
-- **Buffalo 2026** : avec une FC de 168 bpm, le modele etait {'pessimiste' if df_res.iloc[2]['Ecart (min)'] > 0 else 'optimiste'} de {abs(df_res.iloc[2]['Ecart (min)']):.1f} min
+**Amelioration totale : -{min_to_str(amelioration_totale)}** entre {df_res.iloc[0]['Marathon']} et {df_res.iloc[-1]['Marathon']}.
 
-**Amelioration totale sur 2 ans : -{secondes_to_str(amelioration_total)}** entre Beneva 2024 et Buffalo 2026.
+Les marathons futurs seront **detectes automatiquement** dans les donnees Strava
+si la distance depasse 40 km et la FC moyenne depasse 155 bpm.
 
 Le modele ne peut pas capturer l evolution de la forme physique, la preparation specifique,
 ni la motivation du jour de course. **L analyste reste indispensable pour interpreter le contexte.**

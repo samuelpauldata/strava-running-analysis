@@ -2,12 +2,13 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
+import plotly.express as px
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
 st.set_page_config(page_title='Prevision vs Realise', layout='wide')
 st.title('Prevision ML vs Performances reelles')
-st.markdown('Comparaison entre les predictions du modele Random Forest et mes vrais temps de course')
+st.markdown('Comparaison entre les predictions du modele Random Forest et mes 3 marathons officiels')
 
 @st.cache_data
 def charger_donnees():
@@ -35,140 +36,201 @@ def entrainer_modele(df):
 df = charger_donnees()
 modele = entrainer_modele(df)
 
-# Performances reelles
-competitions = [
-    {'distance': '5 km',          'distance_km': 5.0,    'temps_reel': '18:56', 'temps_min': 18 + 56/60},
-    {'distance': '10 km',         'distance_km': 10.0,   'temps_reel': '38:05', 'temps_min': 38 + 5/60},
-    {'distance': 'Semi-marathon', 'distance_km': 21.0975,'temps_reel': '1:25:19','temps_min': 85 + 19/60},
-    {'distance': 'Marathon',      'distance_km': 42.195, 'temps_reel': '2:51:45','temps_min': 171 + 45/60},
+# Donnees reelles des 3 marathons depuis Strava
+marathons = [
+    {
+        'nom': 'Beneva de Quebec',
+        'date': '2024-10-06',
+        'annee': 2024,
+        'mois': 10,
+        'jour_semaine': 6,
+        'distance_km': 42.6483,
+        'moving_time': 13116,
+        'fc': 149.8,
+        'denivele': 80,
+    },
+    {
+        'nom': 'Toronto',
+        'date': '2025-10-19',
+        'annee': 2025,
+        'mois': 10,
+        'jour_semaine': 6,
+        'distance_km': 42.7792,
+        'moving_time': 10842,
+        'fc': 166.6,
+        'denivele': 80,
+    },
+    {
+        'nom': 'Buffalo',
+        'date': '2026-05-24',
+        'annee': 2026,
+        'mois': 5,
+        'jour_semaine': 6,
+        'distance_km': 42.6245,
+        'moving_time': 10419,
+        'fc': 167.9,
+        'denivele': 50,
+    },
 ]
 
-# Parametres de competition typiques
-FC_COMPETITION = 168
-DENIVELE = 50
-ANNEE = 2026
-MOIS = 5
-JOUR = 6  # Dimanche
+def secondes_to_str(s):
+    h = int(s // 3600)
+    m = int((s % 3600) // 60)
+    sec = int(s % 60)
+    return f"{h}h{m:02d}:{sec:02d}"
+
+def min_to_str(m):
+    h = int(m // 60)
+    mins = int(m % 60)
+    secs = int((m % 1) * 60)
+    if h > 0:
+        return f"{h}h{mins:02d}:{secs:02d}"
+    return f"{mins}:{secs:02d}"
 
 resultats = []
-for c in competitions:
-    X_pred = pd.DataFrame([{
-        'distance_km': c['distance_km'],
-        'average_heartrate': FC_COMPETITION,
-        'total_elevation_gain': DENIVELE,
-        'annee': ANNEE,
-        'mois': MOIS,
-        'jour_semaine': JOUR
-    }])
-    allure_pred = modele.predict(X_pred)[0]
-    temps_predit_min = allure_pred * c['distance_km']
-    allure_reelle = c['temps_min'] / c['distance_km']
+for m in marathons:
+    temps_reel_min = m['moving_time'] / 60
+    allure_reelle = temps_reel_min / m['distance_km']
 
-    def min_to_str(m):
-        h = int(m // 60)
-        mins = int(m % 60)
-        secs = int((m % 1) * 60)
-        if h > 0:
-            return f"{h}h{mins:02d}:{secs:02d}"
-        return f"{mins}:{secs:02d}"
+    X_pred = pd.DataFrame([{
+        'distance_km': m['distance_km'],
+        'average_heartrate': m['fc'],
+        'total_elevation_gain': m['denivele'],
+        'annee': m['annee'],
+        'mois': m['mois'],
+        'jour_semaine': m['jour_semaine']
+    }])
+    allure_predite = modele.predict(X_pred)[0]
+    temps_predit_min = allure_predite * m['distance_km']
+    ecart = temps_predit_min - temps_reel_min
 
     resultats.append({
-        'Distance': c['distance'],
-        'Temps reel': c['temps_reel'],
+        'Marathon': m['nom'],
+        'Date': m['date'],
+        'Temps reel': secondes_to_str(m['moving_time']),
         'Temps predit': min_to_str(temps_predit_min),
-        'Ecart (min)': round(temps_predit_min - c['temps_min'], 1),
         'Allure reelle': f"{int(allure_reelle)}:{int((allure_reelle%1)*60):02d} min/km",
-        'Allure predite': f"{int(allure_pred)}:{int((allure_pred%1)*60):02d} min/km",
-        'temps_reel_min': c['temps_min'],
+        'Allure predite': f"{int(allure_predite)}:{int((allure_predite%1)*60):02d} min/km",
+        'FC reelle': f"{m['fc']:.0f} bpm",
+        'Ecart (min)': round(ecart, 1),
+        'temps_reel_min': temps_reel_min,
         'temps_predit_min': temps_predit_min,
     })
 
 df_res = pd.DataFrame(resultats)
 
-# Metriques
-st.header('Resultats')
-cols = st.columns(4)
-for i, row in df_res.iterrows():
-    ecart = row['Ecart (min)']
-    signe = '+' if ecart > 0 else ''
-    cols[i].metric(
-        row['Distance'],
-        f"Reel : {row['Temps reel']}",
-        f"{signe}{ecart:.1f} min vs prediction"
-    )
+# ---- PROGRESSION ----
+st.header('Progression sur 3 marathons')
+col1, col2, col3 = st.columns(3)
+amelioration_total = marathons[0]['moving_time'] - marathons[2]['moving_time']
+amelioration_toronto = marathons[0]['moving_time'] - marathons[1]['moving_time']
+amelioration_buffalo = marathons[1]['moving_time'] - marathons[2]['moving_time']
+
+col1.metric('Beneva de Quebec 2024', secondes_to_str(marathons[0]['moving_time']))
+col2.metric('Toronto 2025', secondes_to_str(marathons[1]['moving_time']),
+            f"-{secondes_to_str(amelioration_toronto)} vs Beneva")
+col3.metric('Buffalo 2026', secondes_to_str(marathons[2]['moving_time']),
+            f"-{secondes_to_str(amelioration_buffalo)} vs Toronto")
 
 st.markdown('---')
 
-# Graphique comparaison
-st.header('Comparaison visuelle')
-fig = go.Figure()
-fig.add_trace(go.Bar(
+# Graphique progression
+fig_prog = go.Figure()
+fig_prog.add_trace(go.Scatter(
+    x=[m['nom'] for m in marathons],
+    y=[m['moving_time'] / 60 for m in marathons],
+    mode='lines+markers+text',
+    text=[secondes_to_str(m['moving_time']) for m in marathons],
+    textposition='top center',
+    line=dict(color='#FC4C02', width=3),
+    marker=dict(size=12, color='#FC4C02'),
+    name='Temps reel'
+))
+fig_prog.update_layout(
+    title='Progression des temps de marathon',
+    yaxis_title='Temps (minutes)',
+    yaxis_autorange='reversed',
+    height=400,
+    plot_bgcolor='white'
+)
+st.plotly_chart(fig_prog, use_container_width=True)
+
+st.markdown('---')
+
+# ---- COMPARAISON ML ----
+st.header('Prediction ML vs Temps reel')
+st.markdown('Le modele est alimenté avec la **vraie FC de chaque course** pour une comparaison juste.')
+
+fig_comp = go.Figure()
+fig_comp.add_trace(go.Bar(
     name='Temps reel',
-    x=df_res['Distance'],
+    x=df_res['Marathon'],
     y=df_res['temps_reel_min'],
     marker_color='#FC4C02',
     text=df_res['Temps reel'],
     textposition='outside'
 ))
-fig.add_trace(go.Bar(
+fig_comp.add_trace(go.Bar(
     name='Temps predit (ML)',
-    x=df_res['Distance'],
+    x=df_res['Marathon'],
     y=df_res['temps_predit_min'],
-    marker_color='steelblue',
+    marker_color='#1a1a2e',
     text=df_res['Temps predit'],
     textposition='outside'
 ))
-fig.update_layout(
+fig_comp.update_layout(
     barmode='group',
-    title='Temps reel vs Prediction ML par distance',
+    title='Temps reel vs Prediction ML',
     yaxis_title='Temps (minutes)',
     height=450,
     plot_bgcolor='white'
 )
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig_comp, use_container_width=True)
 
 # Graphique ecart
-st.header('Ecart prediction vs realite')
-couleurs = ['green' if e < 0 else 'orangered' for e in df_res['Ecart (min)']]
-fig2 = go.Figure(go.Bar(
-    x=df_res['Distance'],
+couleurs = ['#2ecc71' if e < 0 else '#FC4C02' for e in df_res['Ecart (min)']]
+fig_ecart = go.Figure(go.Bar(
+    x=df_res['Marathon'],
     y=df_res['Ecart (min)'],
     marker_color=couleurs,
     text=[f"{'+' if e > 0 else ''}{e:.1f} min" for e in df_res['Ecart (min)']],
     textposition='outside'
 ))
-fig2.add_hline(y=0, line_dash='dash', line_color='black')
-fig2.update_layout(
-    title='Ecart entre prediction ML et temps reel (+ = modele trop pessimiste)',
+fig_ecart.add_hline(y=0, line_dash='dash', line_color='black')
+fig_ecart.update_layout(
+    title='Ecart ML vs reel (+ = modele trop pessimiste, - = modele trop optimiste)',
     yaxis_title='Ecart (minutes)',
     height=400,
     plot_bgcolor='white'
 )
-st.plotly_chart(fig2, use_container_width=True)
+st.plotly_chart(fig_ecart, use_container_width=True)
+
+st.markdown('---')
 
 # Tableau
-st.header('Detail par distance')
+st.header('Detail par marathon')
 st.dataframe(
-    df_res[['Distance', 'Temps reel', 'Temps predit', 'Allure reelle', 'Allure predite', 'Ecart (min)']],
+    df_res[['Marathon', 'Date', 'Temps reel', 'Temps predit', 'FC reelle', 'Allure reelle', 'Allure predite', 'Ecart (min)']],
     use_container_width=True,
     hide_index=True
 )
 
-# Insight
 st.markdown('---')
+
+# Interpretation
 st.header('Interpretation')
-st.markdown('''
-Le modele Random Forest est entraine sur **700+ sorties d entrainement** — des courses faciles,
-des intervalles, des longues sorties. Il ne connait pas la notion de competition.
+st.markdown(f'''
+Le modele Random Forest est entraine sur **700+ sorties d entrainement**. En lui fournissant
+la **vraie frequence cardiaque** de chaque course, on obtient une comparaison plus juste.
 
-En course officielle, plusieurs facteurs echappent au modele :
-- **L adrenaline et la motivation** du jour de course
-- **La preparation specifique** (affutage, nutrition, strategie de pace)
-- **Les chaussures carbone** (gain estime de 2-4%)
-- **L effet peloton** et les conditions meteorologiques
+**Ce que les ecarts revelent :**
+- **Beneva 2024** : premier marathon, le modele etait {'pessimiste' if df_res.iloc[0]['Ecart (min)'] > 0 else 'optimiste'} de {abs(df_res.iloc[0]['Ecart (min)']):.1f} min
+- **Toronto 2025** : avec une FC de 166 bpm, le modele etait {'pessimiste' if df_res.iloc[1]['Ecart (min)'] > 0 else 'optimiste'} de {abs(df_res.iloc[1]['Ecart (min)']):.1f} min  
+- **Buffalo 2026** : avec une FC de 168 bpm, le modele etait {'pessimiste' if df_res.iloc[2]['Ecart (min)'] > 0 else 'optimiste'} de {abs(df_res.iloc[2]['Ecart (min)']):.1f} min
 
-Ces ecarts ne sont pas des erreurs du modele — ils illustrent la limite fondamentale
-du machine learning : **un modele ne peut predire que ce qu il a vu**.
-L analyste reste indispensable pour interpreter le contexte.
+**Amelioration totale sur 2 ans : -{secondes_to_str(amelioration_total)}** entre Beneva 2024 et Buffalo 2026.
+
+Le modele ne peut pas capturer l evolution de la forme physique, la preparation specifique,
+ni la motivation du jour de course. **L analyste reste indispensable pour interpreter le contexte.**
 ''')
 st.caption('Modele Random Forest — R2: 0.813 — entraine sur les donnees Strava personnelles')

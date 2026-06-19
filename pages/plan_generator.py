@@ -1,6 +1,6 @@
 import streamlit as st
 from dotenv import load_dotenv
-load_dotenv('C:/Projets_Data/.env')
+load_dotenv()
 import pandas as pd
 import os
 from groq import Groq

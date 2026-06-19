@@ -63,7 +63,6 @@ with col2:
     else:
         semaines_avant = st.slider('Semaines avant la course', 1, 24, 12)
 with col3:
-    # Calcul automatique selon objectif et semaines
     if 'Pas d evenement' in objectif:
         if 'Maintien' in objectif:
             volume_cible = int(volume_recent)
@@ -84,7 +83,7 @@ with col3:
         volume_cible = int(volume_recent * 1.10)
         st.metric('Volume cible calcule', f'{volume_cible} km', '+10% charge')
 
-# Exemples similaires
+# RAG - exemples similaires depuis entrainement_parsed.csv
 volume_semaines = df_plan[df_plan['type'] != 'off'].groupby('semaine_code')['distance_km'].sum().reset_index()
 volume_semaines.columns = ['semaine_code', 'volume']
 semaines_similaires = volume_semaines[
@@ -97,10 +96,13 @@ exemples_texte = ''
 for code in semaines_similaires:
     vol = volume_semaines[volume_semaines['semaine_code'] == code]['volume'].values[0]
     rows = exemples_df[exemples_df['semaine_code'] == code]
-    exemples_texte += f'Semaine {code} ({vol:.0f} km):\n'
+    exemples_texte += f'--- Exemple ({vol:.0f} km) ---\n'
     for _, row in rows.iterrows():
         exemples_texte += f"{row['notes']}\n"
     exemples_texte += '\n'
+
+if not semaines_similaires:
+    exemples_texte = '(Aucun exemple similaire trouve dans les donnees)'
 
 if st.button('Generer mon plan', type='primary'):
     with st.spinner('Generation en cours...'):
@@ -109,9 +111,26 @@ if st.button('Generer mon plan', type='primary'):
             st.error('Cle GROQ manquante!')
         else:
             client = Groq(api_key=groq_key)
-            prompt = f'''Tu es un coach de course a pied expert quebecois. Genere un plan d entrainement hebdomadaire structure en Markdown.
+            prompt = f'''Tu es un coach de course a pied quebecois. Tu generes des plans d entrainement exactement dans TON style d ecriture personnel — pas en Markdown formate, pas en tableau. Juste du texte brut, une seance par ligne, comme tu les envoies a tes athletes.
 
-PROFIL ACTUEL (donnees Strava reelles) :
+TON STYLE PERSONNEL (regles absolues) :
+- Chaque seance = une seule ligne de texte brut
+- Sorties faciles : "[Jour] X km ext a XmXX"
+  Exemple : "Mercredi 14 km ext a 5m20"
+- Intervalles tapis : "[Jour] tapis roulant | [echauff] a XmXX pause X min / | N x [duree/dist] a XmXX pause X min entre tes [duree/dist] / | [retour calme] a XmXX"
+  Exemple : "Vendredi tapis roulant | 10 min a 5m10 pause 2 min / | 9 x 2 min a 4m10 pause 1 min entre tes 2 min / | 10 min a 5m10"
+- Intervalles ext : "[Jour] X km ext a XmXX pause X min / | N x [dist] a XmXX pause XmXX entre tes [dist] pas + vite / | X km a XmXX"
+  Exemple : "Mardi 2 km ext a 4m40 pause 2 min / | 12 x 400m a 3m30 pause 1m25 entre tes 400m pas + vite / | 2 km a 4m40"
+- Sorties longues avec finish : "[Jour] X km ext a XmXX tes N dernier + rapide"
+  Exemple : "Dimanche 22 km ext a 5m35 tes 5 dernier + rapide"
+- Tempo : "[Jour] X km ext tempo | X km a XmXX | X km a XmXX | X km a XmXX"
+- Repos : "[Jour] off"
+- JAMAIS de tableau, JAMAIS de Markdown, JAMAIS de bullet points
+- Tutoiement toujours (tes, entre tes, pas + vite)
+- Allures en format XmXX (ex: 4m20, 5m10) — jamais 4:20
+- "ext" pour exterieur, "/" comme separateur dans intervalles
+
+PROFIL STRAVA DE L ATHLETE :
 - Allure recente : {allure_str}
 - Volume hebdo recent : {volume_recent:.1f} km
 - Distance max recente : {distance_max:.1f} km
@@ -120,49 +139,31 @@ PROFIL ACTUEL (donnees Strava reelles) :
 OBJECTIF :
 - Course : {objectif}
 - Semaines avant course : {semaines_avant}
-- Volume cible : {volume_cible} km
+- Volume cible cette semaine : {volume_cible} km
 
-EXEMPLES DU COACH (style a reproduire) :
+EXEMPLES REELS DE TES PLANS (reproduis ce style exactement) :
 {exemples_texte}
 
-FORMAT OBLIGATOIRE - utilise exactement ce format Markdown :
+REGLES DE STRUCTURE :
+- Lundi : toujours off
+- Mardi et/ou Vendredi : seances de qualite (intervalles tapis ou ext selon la periode)
+- Mercredi et Jeudi : sorties en endurance ext
+- Samedi : sortie moderee ou off selon le volume
+- Dimanche : longue sortie avec progression finale ("tes X dernier + rapide")
+- Respecte le volume cible de {volume_cible} km au total
+- Adapte l intensite selon les semaines avant la course ({semaines_avant} semaines)
 
-## Semaine d entrainement - {objectif} ({volume_cible} km)
+Genere maintenant la semaine complete (Lundi a Dimanche), une seance par ligne. Commence directement par "Lundi" sans introduction ni conclusion.'''
 
-| Jour | Type | Details | Distance | Allure |
-|------|------|---------|----------|--------|
-| Lundi | ... | ... | ... km | ... min/km |
-| Mardi | ... | ... | ... km | ... min/km |
-| Mercredi | ... | ... | ... km | ... min/km |
-| Jeudi | ... | ... | ... km | ... min/km |
-| Vendredi | ... | ... | ... km | ... min/km |
-| Samedi | ... | ... | ... km | ... min/km |
-| Dimanche | ... | ... | ... km | ... min/km |
-
-**Volume total : X km**
-
-### Notes du coach
-- Conseil 1
-- Conseil 2
-
-REGLES IMPORTANTES :
-- Colonne Details : description courte de la seance seulement
-- Colonne Distance : uniquement le nombre de km (ex: 14 km)
-- Colonne Allure : uniquement l allure (ex: 5:10 min/km)
-- Pour les intervalles : mettre la structure dans Details (ex: 10 x 3 min a 3m35)
-- Notes du coach : conseils specifiques pour cette semaine selon le profil de l athlete
-- Ne jamais melanger les informations entre les colonnes
-
-Genere le plan maintenant :'''
             response = client.chat.completions.create(
                 model='llama-3.3-70b-versatile',
                 messages=[{'role': 'user', 'content': prompt}],
-                max_tokens=1000,
-                temperature=0.7
+                max_tokens=1500,
+                temperature=0.4
             )
             plan = response.choices[0].message.content
             st.header('Votre plan genere')
-            st.markdown(plan)
+            st.text(plan)
             st.caption(f'Plan genere pour {objectif} - {semaines_avant} semaines avant course - {volume_cible} km cibles')
 
 st.markdown('---')

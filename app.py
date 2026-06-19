@@ -37,7 +37,9 @@ col4.metric('Allure moyenne', f"{int(df['allure_min_km'].mean())}:{int((df['allu
 # ---- GRAPHIQUE DISTANCE PLOTLY ----
 st.header('Evolution dans le temps')
 fig_dist = px.scatter(
-    df, x='start_date_local', y='distance_km', color='annee',
+    df, x='start_date_local', y='distance_km',
+    color='annee',
+    color_continuous_scale=[(0, '#FC4C02'), (0.5, '#d63c00'), (1, '#1a1a2e')],
     hover_data={'start_date_local': False, 'date_str': True,
                 'distance_km': ':.1f', 'allure_str': True, 'average_heartrate': ':.0f', 'annee': False},
     labels={'distance_km': 'Distance (km)', 'date_str': 'Date',
@@ -55,7 +57,7 @@ fig_allure = go.Figure()
 fig_allure.add_trace(go.Scatter(
     x=df_sorted['start_date_local'], y=df_sorted['allure_min_km'],
     mode='markers', name='Allure par course',
-    marker=dict(size=5, color='steelblue', opacity=0.5),
+    marker=dict(size=5, color='#FC4C02', opacity=0.4),
     hovertemplate='<b>%{customdata[0]}</b><br>Allure: %{customdata[1]}<br>Distance: %{customdata[2]:.1f} km<extra></extra>',
     customdata=list(zip(
         df_sorted['start_date_local'].dt.strftime('%Y-%m-%d'),
@@ -66,7 +68,7 @@ fig_allure.add_trace(go.Scatter(
 fig_allure.add_trace(go.Scatter(
     x=df_sorted['start_date_local'], y=df_sorted['allure_mobile'],
     mode='lines', name='Moyenne mobile (20 courses)',
-    line=dict(color='orangered', width=2)
+    line=dict(color='#1a1a2e', width=2)
 ))
 fig_allure.update_layout(
     title="Evolution de l'allure - moyenne mobile sur 20 courses",
@@ -84,14 +86,15 @@ stats_annee = df.groupby('annee').agg(
 col1, col2 = st.columns(2)
 with col1:
     fig_ann1 = px.bar(stats_annee, x='annee', y='km_total',
-                      color='km_total', color_continuous_scale='Reds',
                       title='Km total par annee')
+    fig_ann1.update_traces(marker_color='#FC4C02')
+    fig_ann1.update_layout(plot_bgcolor='white')
     st.plotly_chart(fig_ann1, use_container_width=True)
 with col2:
     fig_ann2 = px.bar(stats_annee, x='annee', y='allure_moyenne',
-                      color='allure_moyenne', color_continuous_scale='Blues_r',
                       title='Allure moyenne par annee')
-    fig_ann2.update_layout(yaxis_autorange='reversed')
+    fig_ann2.update_traces(marker_color='#1a1a2e')
+    fig_ann2.update_layout(yaxis_autorange='reversed', plot_bgcolor='white')
     st.plotly_chart(fig_ann2, use_container_width=True)
 
 # ---- CARTE GPS ----
@@ -220,4 +223,3 @@ with col4:
     ''')
     st.metric('Temps predit', '1h35min')
     st.metric('Temps reel', '1h21min', delta='-14min')
-

@@ -113,8 +113,6 @@ print(f'{len(activites)} activites telechargees')
 df = nettoyer_donnees(activites)
 df.to_csv('strava_courses.csv', index=False)
 generer_graphiques(df)
-telecharger_gps(access_token)
-print('Mise a jour complete!')
 
 def telecharger_gps(access_token):
     headers = {"Authorization": f"Bearer {access_token}"}
@@ -158,3 +156,6 @@ def telecharger_gps(access_token):
     df_gps = df_gps.groupby("id").apply(lambda x: x.iloc[::10]).reset_index(drop=True)
     df_gps.to_csv("strava_gps.csv", index=False)
     print(f"GPS mis a jour : {len(df_gps)} points")
+
+telecharger_gps(access_token)
+print('Mise a jour complete!')
